@@ -1,5 +1,7 @@
 
 import RPi.GPIO as GPIO
+from flask import Flask, render_template, request
+app = Flask(__name__)
 import picamera
 import time
 import pygame
@@ -26,6 +28,7 @@ GPIO.setup(led, GPIO.OUT)
 GPIO.output(led, GPIO.LOW)
 
 if __name__ == '__main__':
+	#app.run(host='0.0.0.0', port=80, debug=True)
 	try:
 		while True:
 			x = GPIO.input(irpin)
@@ -58,11 +61,6 @@ if __name__ == '__main__':
 			
 			
 	except KeyboardInterrupt:
-		global isReceipt
-		isReceipt = True
-		detectMode = False
-		print("수령으로 처리되었습니다.")
-		
 		GPIO.output(led, GPIO.LOW)
 		GPIO.cleanup()
 		camera.close()
@@ -74,12 +72,6 @@ def Detector(self):
 	if Time == 10:
 		detectMode = True
 		Shot()
-		while True:
-			response = input( '택배가 맞습니까? Y or N >>')
-			if response == 'N'
-				robbed = False
-				response = 'Y'
-				break
 		print("도난방지모드로 전환되었습니다.")
 		Time = 0
 	else:
@@ -105,3 +97,44 @@ def Alert(self):
 		
 		if response != 'N'
 			hreading.Timer(1,self.Alert).start()
+			
+			
+			
+#- web 제어
+# type 택배감지됨:detect/ 감지모드 작동:detectM/ 도난경보:alert/
+# 택배맞음?:isBox / 도난맞음?:isRobbed/수령버튼 :receipt
+logs = {
+'detect' : {'name' : '물체가 감지되었습니다.', 'select' : False, 'time': '0-0-0'},
+'detectM' : {'name' : '도난방지모드 작동', 'select' : False, 'time': '0-0-0'},
+'alert' : {'name' : '도난이 감지되었습니다.', 'select' : False, 'time': '0-0-0'},
+'isBox' : {'name' : '택배', 'select' : True, 'time': '0-0-0'},
+'isRobbed' : {'name' : '도난', 'select' : True, 'time': '0-0-0'},
+'receipt' : {'name' : '수령', 'select' : False, 'time': '0-0-0'}
+}
+
+@app.route("/<log>/<response>")
+def action(log, response):
+	global detectMode, robbed, isReceipt
+	if log == 'isBox':
+		if response == 'Y':
+			detectMode = True
+			message = "도난방지모드로 전환되었습니다."
+			
+	if log == 'isRobbed':
+		if response == 'Y':
+			robbed = True
+			message = "도난으로 처리되었습니다."
+		else
+			robbed = False
+			message = "오감지로 처리되었습니다."
+			
+	if log == 'receipt':
+		isReceipt = True
+		detectMode = False
+		message = "수령으로 처리되었습니다."
+		
+	templateData = {
+	'message' : message,
+	'logs' : logs
+	}
+	return render_template('DropBox.html', **templateData)

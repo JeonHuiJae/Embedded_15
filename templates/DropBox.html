@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+   <title>Current Status</title>
+</head>
+
+<body>
+   <h1>★ 무인택배함 ★</h1>
+
+   {% for log in logs %}
+   <p>The {{ logs[log].name }}
+   {% if logs[log].select == true %}
+      이(가) 맞습니까? (<a href="/{{log}}/Y">YES</a> / <a href="/{{log}}/N">NO</a>)
+   {% endif %}
+   </p>
+   <a href="/{{receipt}}/get">수령완료</a>
+   {% endfor %}
+
+   {% if message %}
+   <h2>{{ message }}</h2>
+   {% endif %}
+
+</body>
+</html>
+
