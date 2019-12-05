@@ -4,7 +4,12 @@
 </head>
 
 <body>
-   <h1>★ 무인택배함 ★</h1>
+   <h1>★ 무인택배함ㅋㅋ ★</h1>
+
+   <script>
+       Notification.requestPermission();
+       new Notification("타이틀", {body:'메세지 내용'});
+   </script>
 
    {% for log in logs %}
    <p>The {{ logs[log].name }}
