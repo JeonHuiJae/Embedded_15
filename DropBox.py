@@ -21,7 +21,7 @@ camera = picamera.PiCamera()
 camera.resolution = (800, 600)
 #- mav setting
 pygame.mixer.init()
-beep = pygame.mixer.Sound("beep.wav")
+beep = pygame.mixer.Sound("beep4.wav")
 #- LED setting
 GPIO.setup(irpin, GPIO.IN)
 GPIO.setup(led, GPIO.OUT)
