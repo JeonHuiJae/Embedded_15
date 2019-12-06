@@ -4,15 +4,20 @@
 </head>
 
 <body>
-   <h1>¡Ú ¹«ÀÎÅÃ¹èÇÔ ¡Ú</h1>
+   <h1>â˜… ë¬´ì¸íƒë°°í•¨ â˜…</h1>
+
+   <script>
+       Notification.requestPermission();
+       new Notification("íƒ€ì´í‹€", {body:"ë©”ì„¸ì§€ ë‚´ìš©"});
+   </script>
 
    {% for log in logs %}
    <p>The {{ logs[log].name }}
    {% if logs[log].select == true %}
-      ÀÌ(°¡) ¸Â½À´Ï±î? (<a href="/{{log}}/Y">YES</a> / <a href="/{{log}}/N">NO</a>)
+      ì´(ê°€) ë§ìŠµë‹ˆê¹Œ? (<a href="/{{log}}/Y">YES</a> / <a href="/{{log}}/N">NO</a>)
    {% endif %}
    </p>
-   <a href="/{{receipt}}/get">¼ö·É¿Ï·á</a>
+   <a href="/{{receipt}}/get">ìˆ˜ë ¹ì™„ë£Œ</a>
    {% endfor %}
 
    {% if message %}

@@ -1,140 +1,147 @@
-
-import RPi.GPIO as GPIO
 from flask import Flask, render_template, request
-app = Flask(__name__)
 import picamera
 import time
 import pygame
+import threading
+import RPi.GPIO as GPIO
+import json
+app = Flask(__name__)
 
 GPIO.setmode(GPIO.BCM)
-irpin = 21 # Àû¿Ü¼± ¼¾¼­
-led = 20 # Ç¥½Ãµî
-Time = 0 # °¨Áö¿ë Å¸ÀÓº¯¼ö
-firstDetect = False # Ã³À½°¨ÁöµÊ Ç¥½Ã
-detectMode = False # µµ³­¹æÁö¸ğµå
-isReceipt = False
-robbed = False # µµ³­°¨Áö
-response = 'Y' # »ç¿ëÀÚ ÀÔ·Â
+irpin = 21 # ì ì™¸ì„  ì„¼ì„œ
+led = 20 # í‘œì‹œë“±
+Time = 0 # ê°ì§€ìš© íƒ€ì„ë³€ìˆ˜
+Mode = 0 # 0: ê°ì§€ìƒíƒœ 1: ë„ë‚œë°©ì§€ 2: ë„ë‚œ 3: ìˆ˜ë ¹
+FirstDetect = False # ì²˜ìŒê°ì§€ë¨ í‘œì‹œ
+logs = {
+'detect' : {'name' : 'ë¬¼ì²´ê°€ ê°ì§€ë˜ì—ˆìŠµë‹ˆë‹¤.', 'select' : False, 'time': '0-0-0'}
+}
 
 #- camera setting
 camera = picamera.PiCamera()
 camera.resolution = (800, 600)
 #- mav setting
 pygame.mixer.init()
-beep = pygame.mixer.Sound("beep.wav")
-#- LED setting
+beep = pygame.mixer.Sound("beep3.wav")
+
 GPIO.setup(irpin, GPIO.IN)
 GPIO.setup(led, GPIO.OUT)
 GPIO.output(led, GPIO.LOW)
 
-if __name__ == '__main__':
-	#app.run(host='0.0.0.0', port=80, debug=True)
-	try:
-		while True:
-			x = GPIO.input(irpin)
-			time.sleep(0.1)
-			if x != 1 : # °¨Áö O
-				if isReceipt == False:
-					if firstDetect == False: # Ã³À½°¨Áö
-						print("¹°Ã¼°¡ °¨ÁöµÇ¾ú½À´Ï´Ù.")
-						Detector() # 10ÃÊ Ä«¿îÆ®
-						firstDetect = True
-					GPIO.output(led, GPIO.HIGH)
-			else: # °¨Áö X
-				if detectMode == True: # µµ³­¹æÁö¸ğµåÀÏ¶§ °¨ÁöX == µµ³­
-					robbed = True
-					print("µµ³­ÀÌ °¨ÁöµÇ¾ú½À´Ï´Ù..!")
-					Shot()
-					Alert()
-					while True:
-						response = input( 'µµ³­ÀÌ ¸Â½À´Ï±î? Y or N >>')
-						if response == 'N'
-							robbed = False
-							response = 'Y'
-							break
-				else:
-					if isReceipt == True:
-						isReceipt = False
-					else:
-						GPIO.output(led, GPIO.LOW)
-						firstDetect = False
-			
-			
-	except KeyboardInterrupt:
-		GPIO.output(led, GPIO.LOW)
-		GPIO.cleanup()
-		camera.close()
-
-def Detector(self):
-	global Time
-	Time += 1
-	print(Time)
-	if Time == 10:
-		detectMode = True
-		Shot()
-		print("µµ³­¹æÁö¸ğµå·Î ÀüÈ¯µÇ¾ú½À´Ï´Ù.")
-		Time = 0
-	else:
-		threading.Timer(1,self.Detector).start()
+def loadJson():
+    global logs
+    with open('logData.json', 'r') as f:
+        logs = json.load(f)
 
 def Shot():
-	now = time.localtime()
-	fileName = "%04d-%02d-%02d %02d:%02d:%02d" % (now.tm_year, now.tm_mon, now.tm_mday, now.tm_hour, now.tm_min, now.tm_sec)
-	camera.capture('picture/'+fileName)
-	time.sleep(1)
-	print("»çÁø ÀúÀå.")
-	
-def Alert(self):
-	global respond, robbed
-	whie True:
-		beep.play()
-		time.sleep(1.0)
-		
-		GPIO.output(led, GPIO.HIGH)
-		time.sleep(1)
-		GPIO.output(led, GPIO.LOW)
-		time.sleep(1)
-		
-		if response != 'N'
-			hreading.Timer(1,self.Alert).start()
-			
-			
-			
-#- web Á¦¾î
-# type ÅÃ¹è°¨ÁöµÊ:detect/ °¨Áö¸ğµå ÀÛµ¿:detectM/ µµ³­°æº¸:alert/
-# ÅÃ¹è¸ÂÀ½?:isBox / µµ³­¸ÂÀ½?:isRobbed/¼ö·É¹öÆ° :receipt
-logs = {
-'detect' : {'name' : '¹°Ã¼°¡ °¨ÁöµÇ¾ú½À´Ï´Ù.', 'select' : False, 'time': '0-0-0'},
-'detectM' : {'name' : 'µµ³­¹æÁö¸ğµå ÀÛµ¿', 'select' : False, 'time': '0-0-0'},
-'alert' : {'name' : 'µµ³­ÀÌ °¨ÁöµÇ¾ú½À´Ï´Ù.', 'select' : False, 'time': '0-0-0'},
-'isBox' : {'name' : 'ÅÃ¹è', 'select' : True, 'time': '0-0-0'},
-'isRobbed' : {'name' : 'µµ³­', 'select' : True, 'time': '0-0-0'},
-'receipt' : {'name' : '¼ö·É', 'select' : False, 'time': '0-0-0'}
-}
+    now = time.localtime()
+    fileName = "%04d-%02d-%02d %02d:%02d:%02d.jpg" % (now.tm_year, now.tm_mon, now.tm_mday,now.tm_hour, now.tm_min, now.tm_sec)
+    camera.capture('picture/'+fileName)
+    time.sleep(1)
+    print("ì‚¬ì§„ ì €ì¥.")
+
+class AsyncTask:
+    
+    def Detector(self):
+        global Mode
+        if x != 1:
+            global Time
+            Time += 1
+            print(Time)
+            if Time == 5:
+                Mode = 1 # ë„ë‚œë°©ì§€ëª¨ë“œ
+                Shot()
+                print("ë„ë‚œë°©ì§€ëª¨ë“œë¡œ ì „í™˜ë˜ì—ˆìŠµë‹ˆë‹¤.")
+                Time = 0
+            else:
+                threading.Timer(1,self.Detector).start()
+        else:
+            Time =0
+
+    def Alert(self):
+        global respond, robbed, Time
+        while True:
+            Time += 1
+            beep.play()
+            time.sleep(1.0)
+            GPIO.output(led, GPIO.HIGH)
+            time.sleep(1)
+            GPIO.output(led, GPIO.LOW)
+            time.sleep(1)
+            if Time == 3:
+                Time = 0
+                break
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=80, debug=False)
+    at = AsyncTask()
+    try:
+        while True:
+            x = GPIO.input(irpin)
+            time.sleep(0.1)
+            if x != 1 : # ê°ì§€ O
+                if firstDetect == True and Mode == 0: # ì²˜ìŒê°ì§€
+                    print("ë¬¼ì²´ê°€ ê°ì§€ë˜ì—ˆìŠµë‹ˆë‹¤.")
+                    at.Detector() # 10ì´ˆ ì¹´ìš´íŠ¸
+                    firstDetect = False
+                else:
+                    GPIO.output(led, GPIO.HIGH)
+            else: # ê°ì§€ X
+                Time = 0
+                if Mode == 1: # ë„ë‚œë°©ì§€ëª¨ë“œì¼ë•Œ ê°ì§€X == ë„ë‚œ
+                    Mode = 2 # ë„ë‚œ
+                    print("ë„ë‚œì´ ê°ì§€ë˜ì—ˆìŠµë‹ˆë‹¤..!")
+                    Shot()
+                    at.Alert()
+                    Mode = 0 # ë„ë‚œê°ì§€ëª¨ë“œ
+                else:
+                    GPIO.output(led, GPIO.LOW)
+                    firstDetect = True
+
+                        
+    except KeyboardInterrupt:
+        GPIO.output(led, GPIO.LOW)
+        GPIO.cleanup()
+        camera.close()
+
+
+
+            
+#- web ì œì–´
+# type íƒë°°ê°ì§€ë¨:detect/ ê°ì§€ëª¨ë“œ ì‘ë™:detectM/ ë„ë‚œê²½ë³´:alert/
+# íƒë°°ë§ìŒ?:isBox / ë„ë‚œë§ìŒ?:isRobbed/ìˆ˜ë ¹ë²„íŠ¼ :receipt
+
+@app.route("/")
+def page():
+    message = "í™˜ì˜í•©ë‹ˆë‹¤."
+    templateData = {
+        'message' : message,
+        'logs' : logs
+    }
+    return render_template('DropBox.html', **templateData)
 
 @app.route("/<log>/<response>")
 def action(log, response):
-	global detectMode, robbed, isReceipt
-	if log == 'isBox':
-		if response == 'Y':
-			detectMode = True
-			message = "µµ³­¹æÁö¸ğµå·Î ÀüÈ¯µÇ¾ú½À´Ï´Ù."
-			
-	if log == 'isRobbed':
-		if response == 'Y':
-			robbed = True
-			message = "µµ³­À¸·Î Ã³¸®µÇ¾ú½À´Ï´Ù."
-		else
-			robbed = False
-			message = "¿À°¨Áö·Î Ã³¸®µÇ¾ú½À´Ï´Ù."
-			
-	if log == 'receipt':
-		isReceipt = True
-		detectMode = False
-		message = "¼ö·ÉÀ¸·Î Ã³¸®µÇ¾ú½À´Ï´Ù."
-		
-	templateData = {
-	'message' : message,
-	'logs' : logs
-	}
-	return render_template('DropBox.html', **templateData)
+    global detectMode, robbed, isReceipt
+    if log == 'isBox':
+        if response == 'Y':
+            detectMode = True
+            message = "ë„ë‚œë°©ì§€ëª¨ë“œë¡œ ì „í™˜ë˜ì—ˆìŠµë‹ˆë‹¤."
+            
+    if log == 'isRobbed':
+        if response == 'Y':
+            robbed = True
+            message = "ë„ë‚œìœ¼ë¡œ ì²˜ë¦¬ë˜ì—ˆìŠµë‹ˆë‹¤."
+        else:
+            robbed = False
+            message = "ì˜¤ê°ì§€ë¡œ ì²˜ë¦¬ë˜ì—ˆìŠµë‹ˆë‹¤."
+    if log == 'receipt':
+        isReceipt = True
+        detectMode = False
+        message = "ìˆ˜ë ¹ìœ¼ë¡œ ì²˜ë¦¬ë˜ì—ˆìŠµë‹ˆë‹¤."
+        
+    templateData = {
+        'message' : message,
+        'logs' : logs
+    }
+    return render_template('DropBox.html', **templateData)
