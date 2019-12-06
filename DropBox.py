@@ -115,8 +115,8 @@ if __name__ == '__main__':
 def page():
     message = "환영합니다."
     templateData = {
-        'message' : message,
-        'logs' : logs
+    'message' : message,
+    'logs' : logs
     }
     return render_template('DropBox.html', **templateData)
 
@@ -141,7 +141,7 @@ def action(log, response):
         message = "수령으로 처리되었습니다."
         
     templateData = {
-        'message' : message,
-        'logs' : logs
+    'message' : message,
+    'logs' : logs
     }
     return render_template('DropBox.html', **templateData)
