@@ -36,7 +36,8 @@ def loadJson():
 def Shot():
     now = time.localtime()
     fileName = "%04d-%02d-%02d %02d:%02d:%02d.jpg" % (now.tm_year, now.tm_mon, now.tm_mday,now.tm_hour, now.tm_min, now.tm_sec)
-    camera.capture('picture/'+fileName)
+    with picamera.PiCamera() as camera:
+        camera.capture('picture/'+fileName)
     time.sleep(1)
     print("사진 저장.")
 
@@ -73,7 +74,7 @@ class AsyncTask:
                 break
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80, debug=False)
+    app.run(host='0.0.0.0', port=80, debug=True, threaded=True)
     at = AsyncTask()
     try:
         while True:
