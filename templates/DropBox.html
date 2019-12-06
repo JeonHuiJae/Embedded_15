@@ -8,11 +8,6 @@
 
    <h1>{{message}}{{logs}} </h1>
 
-   <script>
-       Notification.requestPermission();
-       new Notification("", {body:""});
-   </script>
-
 </body>
 
  <script>
@@ -36,7 +31,7 @@
           }
           
           // 데스크탑 알림 요청
-          var notification = new Notification("DororongJu", options);
+          var notification = new Notification("안녕", options);
          
       }
       notify();

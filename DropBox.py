@@ -77,7 +77,7 @@ def page():
     message = "환영합니다."
     templateData = {
         'message' : message,
-        'logs' : logs
+        'logs' : "안녕"
     }
     return render_template('DropBox.html', **templateData)
 
