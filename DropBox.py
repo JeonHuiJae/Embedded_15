@@ -41,7 +41,7 @@ class AsyncTask:
     def Shot(self):
         camera = picamera.PiCamera()
         camera.resolution = (800, 600)
-        camera.capture('picture/ex1.jpg')
+        camera.capture('static/ex1.jpg')
         time.sleep(0.1)
         camera.close()
 
