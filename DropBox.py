@@ -5,6 +5,9 @@ import pygame
 import threading
 import RPi.GPIO as GPIO
 import json
+import telepot
+from telepot.loop import MessageLoop
+
 GPIO.setmode(GPIO.BCM)
 irpin = 21 # 적외선 센서
 led = 20 # 표시등
@@ -22,6 +25,12 @@ GPIO.output(led, GPIO.LOW)
 
 app = Flask(__name__)
 
+
+def Send(Message):
+    telegram_id = '1020899593' #아이디 입력
+    my_token = '868641147:AAGt-S98GEBY3PcKc7GmMty16RL7UhkUX4w' #token 입력
+    bot = telepot.Bot(my_token) #봇을 생성해줍니다.
+    bot.sendMessage(chat_id = telegram_id, text = Message) #메시지를 보냅니다.
 
 
 class AsyncTask:
@@ -89,6 +98,7 @@ if __name__ == '__main__':
             if x != 1 : # 감지 O
                 if FirstDetect == False and Mode == 0: # 처음감지
                     print("물체가 감지되었습니다.")
+                    Send("물체가 감지되었습니다.")
                     at.Detector() # 10초 카운트
                     FirstDetect = True
                 GPIO.output(led, GPIO.HIGH)
@@ -98,6 +108,7 @@ if __name__ == '__main__':
                 if Mode == 1: # 도난방지모드일때 감지X == 도난
                     Mode = 2 # 도난
                     print("도난이 감지되었습니다..!")
+                    Send("도난이 감지되었습니다..!")
                     threading.Timer(1,at.Shot).start()
                     at.Alert()
                     Mode = 0 # 도난감지모드
@@ -109,7 +120,6 @@ if __name__ == '__main__':
         GPIO.output(led, GPIO.LOW)
         GPIO.cleanup()
         camera.close()
-
 
 
             

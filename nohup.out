@@ -227,3 +227,23 @@ Examples
 [I 16:13:08.772 NotebookApp] Saving file at /DropBox.py
 [I 16:19:02.339 NotebookApp] Saving file at /DropBox.py
 [I 16:19:07.737 NotebookApp] Saving file at /DropBox.py
+[I 18:14:56.910 NotebookApp] Serving notebooks from local directory: /root/Embedded_15
+[I 18:14:56.912 NotebookApp] The Jupyter Notebook is running at:
+[I 18:14:56.912 NotebookApp] http://raspberrypi:8888/
+[I 18:14:56.913 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 18:15:19.496 NotebookApp] Saving file at /telegram.py
+[I 18:15:21.216 NotebookApp] Saving file at /telegram.py
+[I 18:16:14.342 NotebookApp] Saving file at /telegram.py
+[I 18:16:56.002 NotebookApp] Saving file at /DropBox.py
+[I 18:17:20.584 NotebookApp] Saving file at /DropBox.py
+[I 18:17:57.207 NotebookApp] Saving file at /DropBox.py
+[I 18:18:04.136 NotebookApp] Saving file at /DropBox.py
+[I 18:18:09.769 NotebookApp] Saving file at /DropBox.py
+[I 18:18:19.414 NotebookApp] Saving file at /DropBox.py
+[I 18:18:23.943 NotebookApp] Saving file at /DropBox.py
+[I 18:18:24.426 NotebookApp] Saving file at /DropBox.py
+[I 18:18:42.632 NotebookApp] Saving file at /DropBox.py
+[I 18:18:55.847 NotebookApp] Saving file at /DropBox.py
+[I 18:18:57.862 NotebookApp] Saving file at /DropBox.py
+[C 18:20:07.546 NotebookApp] received signal 15, stopping
+[I 18:20:07.565 NotebookApp] Shutting down 0 kernels
