@@ -10,7 +10,7 @@ irpin = 21 # 적외선 센서
 led = 20 # 표시등
 Time = 0 # 감지용 타임변수
 Mode = 0 # 0: 감지상태 1: 도난방지 2: 도난 3: 수령
-FirstDetect = False # 처음감지됨 표시
+FirstDetect = False # 처음감지됨 표시ㅇㅇ
 
 #- mav setting
 pygame.mixer.init()

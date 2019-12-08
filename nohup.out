@@ -1,0 +1,229 @@
+[I 14:03:56.422 NotebookApp] Serving notebooks from local directory: /root/Embedded_15
+[I 14:03:56.423 NotebookApp] The Jupyter Notebook is running at:
+[I 14:03:56.423 NotebookApp] http://raspberrypi:8888/
+[I 14:03:56.424 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 14:04:06.298 NotebookApp] Clearing invalid/expired login cookie username-203-252-166-155-8888
+[W 14:04:06.303 NotebookApp] Clearing invalid/expired login cookie username-203-252-166-155-8888
+[I 14:04:06.306 NotebookApp] 302 GET /tree? (203.252.166.152) 13.13ms
+[I 14:04:08.504 NotebookApp] 302 POST /login?next=%2Ftree%3F (203.252.166.152) 7.47ms
+[I 14:06:18.814 NotebookApp] Creating new directory in 
+[I 14:07:56.176 NotebookApp] Saving file at /DropBox.py
+[I 14:11:14.719 NotebookApp] Saving file at /DropBox.py
+[I 14:12:08.226 NotebookApp] Saving file at /DropBox.py
+[W 14:13:01.548 NotebookApp] 400 GET /api/contents/templates/DropBox.html?type=file&format=text&_=1575781982566 (203.252.166.152): /root/Embedded_15/templates/DropBox.html is not UTF-8 encoded
+[W 14:13:01.549 NotebookApp] /root/Embedded_15/templates/DropBox.html is not UTF-8 encoded
+[W 14:13:01.551 NotebookApp] 400 GET /api/contents/templates/DropBox.html?type=file&format=text&_=1575781982566 (203.252.166.152) 12.79ms referer=http://203.252.166.155:8888/edit/templates/DropBox.html
+[W 14:20:48.675 NotebookApp] 400 GET /api/contents/templates/DropBox.html?type=file&format=text&_=1575782449695 (203.252.166.152): /root/Embedded_15/templates/DropBox.html is not UTF-8 encoded
+[W 14:20:48.677 NotebookApp] /root/Embedded_15/templates/DropBox.html is not UTF-8 encoded
+[W 14:20:48.679 NotebookApp] 400 GET /api/contents/templates/DropBox.html?type=file&format=text&_=1575782449695 (203.252.166.152) 13.93ms referer=http://203.252.166.155:8888/edit/templates/DropBox.html
+[W 14:21:48.972 NotebookApp] delete /templates/DropBox.html
+[I 14:22:11.923 NotebookApp] Saving file at /templates/DropBox.html
+[W 14:38:00.519 NotebookApp] delete /logData.json
+[I 14:57:22.231 NotebookApp] Saving file at /DropBox.py
+[I 14:58:06.904 NotebookApp] Saving file at /DropBox.py
+[I 14:58:19.110 NotebookApp] Saving file at /DropBox.py
+[I 14:59:12.120 NotebookApp] Saving file at /DropBox.py
+[I 14:59:25.335 NotebookApp] Saving file at /DropBox.py
+[I 15:00:10.394 NotebookApp] Saving file at /DropBox.py
+[I 15:00:44.575 NotebookApp] Saving file at /DropBox.py
+[I 15:00:49.850 NotebookApp] Saving file at /DropBox.py
+[I 15:04:25.717 NotebookApp] Saving file at /DropBox.py
+[I 15:04:29.086 NotebookApp] Saving file at /DropBox.py
+[I 15:05:09.399 NotebookApp] Saving file at /DropBox.py
+[I 15:06:34.748 NotebookApp] Saving file at /DropBox.py
+[I 15:06:39.717 NotebookApp] Saving file at /DropBox.py
+[I 15:06:55.926 NotebookApp] Saving file at /DropBox.py
+[I 15:07:39.177 NotebookApp] Saving file at /DropBox.py
+[I 15:10:02.449 NotebookApp] Saving file at /DropBox.py
+[I 15:10:08.087 NotebookApp] Saving file at /DropBox.py
+[I 15:10:22.376 NotebookApp] Saving file at /DropBox.py
+[I 15:11:03.260 NotebookApp] Saving file at /DropBox.py
+[I 15:11:05.542 NotebookApp] Saving file at /DropBox.py
+[I 15:13:09.021 NotebookApp] Saving file at /DropBox.py
+[I 15:13:11.174 NotebookApp] Saving file at /DropBox.py
+[I 15:13:21.608 NotebookApp] Saving file at /DropBox.py
+[I 15:13:22.536 NotebookApp] Saving file at /DropBox.py
+[I 15:14:03.201 NotebookApp] Saving file at /DropBox.py
+[I 15:14:44.042 NotebookApp] Saving file at /DropBox.py
+[I 15:15:00.457 NotebookApp] Saving file at /DropBox.py
+[I 15:15:42.587 NotebookApp] Saving file at /DropBox.py
+[I 15:15:43.943 NotebookApp] Saving file at /DropBox.py
+[I 15:15:57.927 NotebookApp] Saving file at /DropBox.py
+[I 15:18:46.291 NotebookApp] Saving file at /DropBox.py
+[I 15:18:58.668 NotebookApp] Saving file at /DropBox.py
+[I 15:20:21.989 NotebookApp] Saving file at /DropBox.py
+[I 15:21:14.939 NotebookApp] Saving file at /DropBox.py
+[I 15:21:47.546 NotebookApp] Saving file at /DropBox.py
+[I 15:22:05.952 NotebookApp] Saving file at /DropBox.py
+[I 15:23:26.636 NotebookApp] 302 GET / (198.108.66.16) 3.53ms
+[I 15:23:26.830 NotebookApp] 302 GET /tree? (198.108.66.16) 3.95ms
+[I 15:23:57.075 NotebookApp] Saving file at /DropBox.py
+[I 15:24:03.083 NotebookApp] Saving file at /DropBox.py
+[I 15:24:22.157 NotebookApp] Saving file at /DropBox.py
+[I 15:26:25.996 NotebookApp] Saving file at /DropBox.py
+[I 15:26:47.885 NotebookApp] Saving file at /DropBox.py
+[I 15:29:16.830 NotebookApp] Saving file at /DropBox.py
+[I 15:29:29.089 NotebookApp] Saving file at /DropBox.py
+[I 15:29:52.559 NotebookApp] Saving file at /DropBox.py
+[I 15:30:04.573 NotebookApp] Saving file at /DropBox.py
+[I 15:30:09.052 NotebookApp] Saving file at /DropBox.py
+[I 15:30:42.397 NotebookApp] Saving file at /DropBox.py
+[W 15:31:41.287 NotebookApp] delete /ex1.jpg
+[W 15:31:48.172 NotebookApp] delete /templates/main.html
+[I 15:32:07.733 NotebookApp] Saving file at /DropBox.py
+[I 15:32:15.290 NotebookApp] Saving file at /DropBox.py
+[I 15:32:47.062 NotebookApp] Saving file at /DropBox.py
+[I 15:33:02.219 NotebookApp] Saving file at /DropBox.py
+[I 15:34:37.709 NotebookApp] Saving file at /DropBox.py
+[I 15:34:45.712 NotebookApp] Saving file at /DropBox.py
+[I 15:34:48.784 NotebookApp] Saving file at /DropBox.py
+[I 15:36:48.429 NotebookApp] Saving file at /DropBox.py
+[I 15:36:49.370 NotebookApp] Saving file at /DropBox.py
+[I 15:37:25.051 NotebookApp] Saving file at /DropBox.py
+[I 15:38:33.613 NotebookApp] Saving file at /DropBox.py
+[I 15:39:48.028 NotebookApp] Saving file at /DropBox.py
+[I 15:40:55.885 NotebookApp] Saving file at /DropBox.py
+[I 15:41:50.765 NotebookApp] Saving file at /DropBox.py
+[I 15:42:27.675 NotebookApp] Saving file at /DropBox.py
+[I 15:46:38.388 NotebookApp] Saving file at /DropBox.py
+[I 15:47:51.693 NotebookApp] Saving file at /DropBox.py
+[I 15:48:31.121 NotebookApp] Saving file at /DropBox.py
+[I 15:48:58.357 NotebookApp] Saving file at /DropBox.py
+[I 15:52:38.736 NotebookApp] Serving notebooks from local directory: /root/Embedded_15
+[I 15:52:38.740 NotebookApp] The Jupyter Notebook is running at:
+[I 15:52:38.741 NotebookApp] http://raspberrypi:8888/
+[I 15:52:38.741 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 15:52:39.954 NotebookApp] Bad config encountered during initialization:
+[C 15:52:39.955 NotebookApp] Unrecognized flag: '--allw-root'
+The Jupyter HTML Notebook.
+
+This launches a Tornado based HTML Notebook Server that serves up an
+HTML5/Javascript Notebook client.
+
+Subcommands
+-----------
+
+Subcommands are launched as `jupyter-notebook cmd [args]`. For information on
+using subcommand 'cmd', do: `jupyter-notebook cmd -h`.
+
+list
+    List currently running notebook servers.
+stop
+    Stop currently running notebook server for a given port
+password
+    Set a password for the notebook server.
+
+Options
+-------
+
+Arguments that take values are actually convenience aliases to full
+Configurables, whose aliases are listed on the help line. For more information
+on full configurables, see '--help-all'.
+
+--debug
+    set log level to logging.DEBUG (maximize logging output)
+--generate-config
+    generate default config file
+-y
+    Answer yes to any questions instead of prompting.
+--no-browser
+    Don't open the notebook in a browser after startup.
+--pylab
+    DISABLED: use %pylab or %matplotlib in the notebook to enable matplotlib.
+--no-mathjax
+    Disable MathJax
+    
+    MathJax is the javascript library Jupyter uses to render math/LaTeX. It is
+    very large, so you may want to disable it if you have a slow internet
+    connection, or for offline use of the notebook.
+    
+    When disabled, equations etc. will appear as their untransformed TeX source.
+--allow-root
+    Allow the notebook to be run from root user.
+--script
+    DEPRECATED, IGNORED
+--no-script
+    DEPRECATED, IGNORED
+--log-level=<Enum> (Application.log_level)
+    Default: 30
+    Choices: (0, 10, 20, 30, 40, 50, 'DEBUG', 'INFO', 'WARN', 'ERROR', 'CRITICAL')
+    Set the log level by value or name.
+--config=<Unicode> (JupyterApp.config_file)
+    Default: ''
+    Full path of a config file.
+--ip=<Unicode> (NotebookApp.ip)
+    Default: 'localhost'
+    The IP address the notebook server will listen on.
+--port=<Int> (NotebookApp.port)
+    Default: 8888
+    The port the notebook server will listen on.
+--port-retries=<Int> (NotebookApp.port_retries)
+    Default: 50
+    The number of additional ports to try if the specified port is not
+    available.
+--transport=<CaselessStrEnum> (KernelManager.transport)
+    Default: 'tcp'
+    Choices: ['tcp', 'ipc']
+--keyfile=<Unicode> (NotebookApp.keyfile)
+    Default: ''
+    The full path to a private key file for usage with SSL/TLS.
+--certfile=<Unicode> (NotebookApp.certfile)
+    Default: ''
+    The full path to an SSL/TLS certificate file.
+--client-ca=<Unicode> (NotebookApp.client_ca)
+    Default: ''
+    The full path to a certificate authority certificate for SSL/TLS client
+    authentication.
+--notebook-dir=<Unicode> (NotebookApp.notebook_dir)
+    Default: ''
+    The directory to use for notebooks and kernels.
+--browser=<Unicode> (NotebookApp.browser)
+    Default: ''
+    Specify what command to use to invoke a web browser when opening the
+    notebook. If not specified, the default browser will be determined by the
+    `webbrowser` standard library module, which allows setting of the BROWSER
+    environment variable to override it.
+--pylab=<Unicode> (NotebookApp.pylab)
+    Default: 'disabled'
+    DISABLED: use %pylab or %matplotlib in the notebook to enable matplotlib.
+--gateway-url=<Unicode> (GatewayClient.url)
+    Default: None
+    The url of the Kernel or Enterprise Gateway server where kernel
+    specifications are defined and kernel management takes place. If defined,
+    this Notebook server acts as a proxy for all kernel management and kernel
+    specification retrieval.  (JUPYTER_GATEWAY_URL env var)
+
+To see all available configurables, use `--help-all`
+
+Examples
+--------
+
+    jupyter notebook                       # start the notebook
+    jupyter notebook --certfile=mycert.pem # use SSL/TLS certificate
+    jupyter notebook password              # enter a password to protect the server
+
+[I 15:53:06.699 NotebookApp] Saving file at /DropBox.py
+[I 15:54:01.776 NotebookApp] Saving file at /DropBox.py
+[I 15:54:04.383 NotebookApp] Saving file at /DropBox.py
+[I 15:54:08.849 NotebookApp] Saving file at /DropBox.py
+[I 15:54:18.246 NotebookApp] Saving file at /DropBox.py
+[I 15:54:35.515 NotebookApp] Saving file at /DropBox.py
+[I 15:54:37.040 NotebookApp] Saving file at /DropBox.py
+[I 15:54:53.618 NotebookApp] Saving file at /DropBox.py
+[I 15:55:56.385 NotebookApp] Saving file at /DropBox.py
+[I 15:56:10.454 NotebookApp] Saving file at /DropBox.py
+[I 15:56:11.119 NotebookApp] Saving file at /DropBox.py
+[I 15:56:13.090 NotebookApp] Saving file at /DropBox.py
+[I 15:56:35.025 NotebookApp] Saving file at /DropBox.py
+[I 15:56:42.418 NotebookApp] Saving file at /DropBox.py
+[I 15:57:27.811 NotebookApp] Saving file at /DropBox.py
+[I 15:58:01.061 NotebookApp] Saving file at /DropBox.py
+[I 15:59:54.913 NotebookApp] Saving file at /DropBox.py
+[I 16:08:55.808 NotebookApp] Saving file at /DropBox.py
+[I 16:09:25.847 NotebookApp] Saving file at /DropBox.py
+[I 16:10:02.198 NotebookApp] Saving file at /DropBox.py
+[I 16:10:46.588 NotebookApp] Saving file at /DropBox.py
+[I 16:11:59.223 NotebookApp] Saving file at /DropBox.py
+[I 16:13:08.772 NotebookApp] Saving file at /DropBox.py
+[I 16:19:02.339 NotebookApp] Saving file at /DropBox.py
+[I 16:19:07.737 NotebookApp] Saving file at /DropBox.py
