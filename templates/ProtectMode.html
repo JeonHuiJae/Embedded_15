@@ -1,14 +1,41 @@
 <!DOCTYPE html>
-<head>
-   <title>Current Status</title>
-</head>
+<body bgcolor= #3A3A3A>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Gugi|Nanum+Gothic:700&display=swap" rel="stylesheet">
+		<style type="text/css">
+			#wrpper{
+				background-color: #BF8E44;
+				font-family: 'Nanum Gothic', sans-serif;
+				color: #ddd;
+				width: 400px;
+				margin: 0 auto;
+				border: 10px solid #ddd;
+				padding: 30px;
+				padding-top: 0px;
+				padding-bottom: 10px;
+				margin-top: 40px;
+			}
+			#btn{
+				font-size: 20px;
+				font-family: 'Nanum Gothic', sans-serif;
+			}
+			#img{
+				background-color: #A07B3E; 
+				padding: 20px;
+				text-align: center;
+			}
+		</style>
+	</head>
 
-<body>
-   <h1>DropBox</h1>
-    <p><img src={{ url_for("static", filename="ex1.jpg" )}}></p>
-   <h1>{{message}}</h1>
-    
-    <a href="/message/receive"> <p style = "font-size:24px"> 수령 </p> </a>
+	<body>
+		<div id="wrpper">
+			<h1 style="font-family: 'Gugi', cursive; font-size: 40px;">DropBox</h1>
+			<p id="img"><img src={{ url_for("static", filename="ex1.jpg" width="350" height="400")}}></p>
+			<h1 style="color: #72582F">{{message}}</h1>
+			<p style="text-align: center;">
+				<button id="btn" type="button" onclick="location.href='/message/receive'">수령</button>
+			</p>
+		</div>
+	</body>
 </body>
-
 </html>
