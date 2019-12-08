@@ -28,14 +28,10 @@ app = Flask(__name__)
 
 
 def Send(Message):
-    telegram_id = '1020899593' #아이디 입력
-    telegram_id2 = '929570079' #아이디 입력
+    telegram_id = '-328726901' #아이디 입력
     my_token = '1016022560:AAEaEHoJxgyqpqm_vXpDCnE_TrZhKM3sMy4' #token 입력
     bot = telepot.Bot(my_token) #봇을 생성해줍니다.
     bot.sendMessage(chat_id = telegram_id, text = Message) #메시지를 보냅니다.
-    bot.sendMessage(chat_id = telegram_id2, text = Message) #메시지를 보냅니다.
-
-
 
 class AsyncTask:
     def Shot(self):
