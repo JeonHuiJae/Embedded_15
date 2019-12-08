@@ -4,19 +4,19 @@
 </head>
 
 <body>
-   <h1>¡Ú ¹«ÀÎÅÃ¹èÇÔ ¡Ú</h1>
+   <h1>DropBox</h1>
 
    <h1>{{message}}{{logs}} </h1>
 
-    <button id="requestPermissionButton" class="btn btn-warning btn-lg btn-block">µ¥½ºÅ©Å¾ ¾Ë¸² ±ÇÇÑ ¿äÃ»</button>
+    <button id="requestPermissionButton" class="btn btn-warning btn-lg btn-block">desctop request</button>
     <hr />
     <div id="notificationBlock" class="form-group">
-        <label class="control-label">¾Ë¸² ¸Þ½ÃÁö</label>
+        <label class="control-label">alarm message</label>
         <div class="input-group">
-            <span class="input-group-addon">¸Þ½ÃÁö</span>
+            <span class="input-group-addon">message</span>
             <input id="notificationMessage" type="text" class="form-control" disabled/>
             <span class="input-group-btn">
-                <button id="notificationButton" class="btn btn-info" type="button" disabled>¾Ë¸²</button>
+                <button id="notificationButton" class="btn btn-info" type="button" disabled>alarm</button>
             </span>
         </div>
     </div>
@@ -28,50 +28,41 @@
        {
             if (!("Notification" in window)) 
             {
-               alert("µ¥½ºÅ©Åé ¾Ë¸²À» Áö¿øÇÏÁö ¾Ê´Â ºê¶ó¿ìÀúÀÔ´Ï´Ù.");
+               alert("not allow desktok alarm");
             }
-       // µ¥½ºÅ©Å¾ ¾Ë¸² ±ÇÇÑ ¿äÃ»
+       // ÂµÂ¥Â½ÂºÅ©Å¾ Â¾Ë¸Â² Â±È‡Ï Â¿åƒ»
        Notification.requestPermission(function (result) {
-           // ±ÇÇÑ °ÅÀý
+           // Â±È‡Ï Â°Æ€
            if(result == 'denied') 
            {
-               alert('¾Ë¸²À» Â÷´ÜÇÏ¼Ì½À´Ï´Ù.\nºê¶ó¿ìÀúÀÇ »çÀÌÆ® ¼³Á¤¿¡¼­ º¯°æÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.');
+               alert('alarm denied \n browser setting please');
                return false;
            }
        });
         var options = {
-              body: "¤»¤»¤»"
+              body: "hello"
           }
           
-          // µ¥½ºÅ©Å¾ ¾Ë¸² ¿äÃ»
-          var notification = new Notification("¾È³ç", options);
+          var notification = new Notification("hello", options);
          
       }
       notify();
 
 
-      // µ¥½ºÅ© Å¾ ¾Ë¶÷ Å×½ºÆ®
       var requestPermissionButton = $("#requestPermissionButton");
       var notificationButton = $("#notificationButton");
       var notificationMessage = $("#notificationMessage");
       var iconDataURI = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKBJREFUeNpiYBjpgBFd4P///wJAaj0QO9DEQiAg5ID9tLIcmwMYsDgABhqoaTHMUHRxpsGYBv5TGqTIZsDkYWLo6gc8BEYdMOqAUQeMOoAqDgAWcgZAfB9EU63SIAGALH8PZb+H8v+jVz64KiOK6wIg+ADEArj4hOoCajiAqMpqtDIadcCoA0YdQIoDDtCqQ4KtBY3NAYG0csQowAYAAgwAgSqbls5coPEAAAAASUVORK5CYII=";
 
-      //µ¥½ºÅ©Å¾ ¾Ë¸² ±ÇÇÑ ¿äÃ» ¹öÆ°À» ´©¸£¸é,
       requestPermissionButton.on("click", function () {
-        //µ¥½ºÅ©Å¾ ¾Ë¸² ±ÇÇÑ ¿äÃ»
           Notification.requestPermission(function (result) {
 
-              //¿äÃ»À» °ÅÀýÇÏ¸é,
               if (result === 'denied') {
                   return;
               }
-              //¿äÃ»À» Çã¿ëÇÏ¸é,
               else {
-                  //µ¥½ºÅ©Å¾ ¾Ë¸² ±ÇÇÑ ¿äÃ» ¹öÆ°À» ºñÈ°¼ºÈ­
                   requestPermissionButton.attr('disabled', 'disabled');
-                  //µ¥½ºÅ©Å¾ ¸Þ½ÃÁö ÀÔ·ÂÆûÀ» È°¼ºÈ­
                   notificationMessage.removeAttr('disabled');
-                  //µ¥½ºÅ©Å¾ ¸Þ½ÃÁö ¿äÃ» ¹öÆ°À» È°¼ºÈ­
                   notificationButton.removeAttr('disabled');
                   return;
               }
@@ -79,11 +70,9 @@
       });
 
 
-      //µ¥½ºÅ©Å¾ ¾Ë¸² ¹öÆ°À» ´©¸£¸é,
       notificationButton.on("click", function () {
           var message = notificationMessage.val();
           
-          //¸Þ½ÃÁö¸¦ ÀÔ·ÂÇÑ °æ¿ì¿¡¸¸,
           if (message !== null && message.length > 0) {
               
               var options = {
@@ -91,16 +80,12 @@
                   icon: iconDataURI
               }
              
-              //µ¥½ºÅ©Å¾ ¾Ë¸² ¿äÃ»
-              var notification = new Notification("¾Ë¶÷ÀÔ´Ï´Ù ¤¾¤·¤¾¤·", options);
+              var notification = new Notification("this is alarm hello", options);
               
-              //¾Ë¸² ÈÄ 5ÃÊ µÚ,
               setTimeout(function () {
-                  //¾ó¶÷ ¸Þ½ÃÁö ´Ý±â
                   notification.close();
               }, 5000);
           }
       });
    </script>
 </html>
-

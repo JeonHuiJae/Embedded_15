@@ -12,7 +12,7 @@ Time = 0 # 감지용 타임변수
 Mode = 0 # 0: 감지상태 1: 도난방지 2: 도난 3: 수령
 FirstDetect = False # 처음감지됨 표시
 logs = {
-    'detect' : {'name' : '물체가 감지되었습니다.', 'select' : False, 'time': '0-0-0'}
+    'detect' : {'name' : 'box is detected.', 'select' : False, 'time': '0-0-0'}
 }
 
 #- camera setting
@@ -82,7 +82,7 @@ def page():
     return render_template('DropBox.html', **templateData)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80, debug=True, threaded=True)
+    app.run(host='0.0.0.0', port=80, debug=False, threaded=True)
     at = AsyncTask()
     try:
         while True:
@@ -126,19 +126,19 @@ def action(log, response):
     if log == 'isBox':
         if response == 'Y':
             detectMode = True
-            message = "도난방지모드로 전환되었습니다."
+            message = "Now donaBangJi Mode"
             
     if log == 'isRobbed':
         if response == 'Y':
             robbed = True
-            message = "도난으로 처리되었습니다."
+            message = "is Robbed"
         else:
             robbed = False
-            message = "오감지로 처리되었습니다."
+            message = "is not Robbed"
     if log == 'receipt':
         isReceipt = True
         detectMode = False
-        message = "수령으로 처리되었습니다."
+        message = "Receipted"
         
     templateData = {
         'message' : message,
