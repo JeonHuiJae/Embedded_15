@@ -11,9 +11,6 @@ led = 20 # 표시등
 Time = 0 # 감지용 타임변수
 Mode = 0 # 0: 감지상태 1: 도난방지 2: 도난 3: 수령
 FirstDetect = False # 처음감지됨 표시
-logs = {
-    'detect' : {'name' : 'box is detected.', 'select' : False, 'time': '0-0-0'}
-}
 
 #- camera setting
 camera = picamera.PiCamera()
@@ -25,11 +22,6 @@ beep = pygame.mixer.Sound("beep3.wav")
 GPIO.setup(irpin, GPIO.IN)
 GPIO.setup(led, GPIO.OUT)
 GPIO.output(led, GPIO.LOW)
-
-def loadJson():
-    global logs
-    with open('logData.json', 'r') as f:
-        logs = json.load(f)
 
 def Shot():
     now = time.localtime()
@@ -77,7 +69,6 @@ def page():
     message = "환영합니다."
     templateData = {
         'message' : message,
-        'logs' : "안녕"
     }
     return render_template('DropBox.html', **templateData)
 
@@ -120,28 +111,20 @@ if __name__ == '__main__':
 # type 택배감지됨:detect/ 감지모드 작동:detectM/ 도난경보:alert/
 # 택배맞음?:isBox / 도난맞음?:isRobbed/수령버튼 :receipt
 
-@app.route("/<log>/<response>")
-def action(log, response):
+@app.route("/<page>")
+def action(page):
     global detectMode, robbed, isReceipt
-    if log == 'isBox':
+    if page == 'isRight':
         if response == 'Y':
             detectMode = True
-            message = "Now donaBangJi Mode"
+            message = "택배가 맞나요?"
             
-    if log == 'isRobbed':
-        if response == 'Y':
-            robbed = True
-            message = "is Robbed"
-        else:
-            robbed = False
-            message = "is not Robbed"
-    if log == 'receipt':
-        isReceipt = True
-        detectMode = False
-        message = "Receipted"
+    if page == 'Anti-theft':
+            message = "도난방지모드 입니다"
+    if page == 'Robbed':
+        message = "도난이 감지되었습니다"
         
     templateData = {
         'message' : message,
-        'logs' : logs
     }
     return render_template('DropBox.html', **templateData)

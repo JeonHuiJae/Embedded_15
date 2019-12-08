@@ -1,8 +1,0 @@
-logs = {
-    'detect' : {'name' : '물체가 감지되었습니다.', 'select' : False, 'time': '0-0-0'},
-    'detectM' : {'name' : '도난방지모드 작동', 'select' : False, 'time': '0-0-0'},
-    'alert' : {'name' : '도난이 감지되었습니다.', 'select' : False, 'time': '0-0-0'},
-    'isBox' : {'name' : '택배', 'select' : True, 'time': '0-0-0'},
-    'isRobbed' : {'name' : '도난', 'select' : True, 'time': '0-0-0'},
-    'receipt' : {'name' : '수령', 'select' : False, 'time': '0-0-0'}
-}
