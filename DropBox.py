@@ -8,8 +8,11 @@ import json
 import telepot
 from telepot.loop import MessageLoop
 import os
-import subprocess
- 
+from subprocess import call
+from datetime import datetime 
+
+curName = datetime.now()
+        
 GPIO.setmode(GPIO.BCM)
 irpin = 21 # 적외선 센서
 led = 20 # 표시등
@@ -17,6 +20,7 @@ Time = 0 # 감지용 타임변수
 Mode = 0 # 0: 감지상태 1: 도난방지 2: 도난 3: 수령
 FirstDetect = False # 처음감지됨 표시ㅇㅇ
 x = 0
+fileNum = 0
 
 #- mav setting
 pygame.mixer.init()
@@ -47,11 +51,14 @@ class AsyncTask:
     def Record(self):
         camera2 = picamera.PiCamera()
         camera2.resolution= (350, 400)
-        camera2.start_recording('static/ex2.h264')
-        subprocess.call('MP4Box -add static/ex2.h264 static/ex2.mp4', shell=True)
-        camera2.wait_recording(10)
+        curName = datetime.now()
+        camera2.start_recording('static/'+str(curName)+'.h264')
+        camera2.wait_recording(5)
         camera2.stop_recording()
-        camera2.close
+        camera2.close()
+        
+        call("MP4Box -add static/"+str(curName)+".h264 static/"+str(curName)+".mp4", shell=True)
+        print("인코딩 완려!!!")
         #return render_template("DropBox.html")
 
     def Detector(self):
@@ -142,6 +149,7 @@ def protect():
 def robbed():
     message = "도난이 감지되었습니다!!"
     templateData = {
+        'curName' : curName,
         'message' : message,
     }
     return render_template('RobbedMode.html', **templateData)
@@ -177,7 +185,7 @@ if __name__ == '__main__':
                     print("도난이 감지되었습니다..!")
                     Send("도난이 감지되었습니다..! http://"+ ip +"/robbed")
                     threading.Timer(1,at.Record).start()
-                    threading.Timer(1,at.Alert).start()
+                    at.Alert()
                     Mode = 0 # 도난감지모드
                 GPIO.output(led, GPIO.LOW)
                 FirstDetect = False

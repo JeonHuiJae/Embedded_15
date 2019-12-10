@@ -32,11 +32,10 @@
 		<div id="wrpper">
 			<h1 style="font-family: 'Gugi', cursive; font-size: 40px;">DropBox</h1>
 			<p id="img">
-				<video src={{ url_for("static", filename="ex2.h264")}}></p>
+				<video controls autoplay loop> 
+                   <source src="static/"+{{curName}}+".mp4" type="video/mp4"> 
+                </video></p>
 			<h1 style="color: #72582F">{{message}}</h1>
-			<p style="text-align: center;">
-				<button id="btn" type="button" onclick="location.href=''">동영상 다운</button>
-			</p>
 		</div>
 	</body>
 </body>
