@@ -254,3 +254,261 @@ Examples
 [I 18:24:23.298 NotebookApp] Saving file at /DropBox.py
 [I 18:24:37.850 NotebookApp] Saving file at /DropBox.py
 [I 18:24:47.095 NotebookApp] Saving file at /DropBox.py
+[I 15:17:35.194 NotebookApp] Serving notebooks from local directory: /root/Embedded_15
+[I 15:17:35.195 NotebookApp] The Jupyter Notebook is running at:
+[I 15:17:35.196 NotebookApp] http://raspberrypi:8888/
+[I 15:17:35.196 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 15:17:57.749 NotebookApp] 302 GET / (172.16.164.37) 9.78ms
+[I 15:17:57.776 NotebookApp] 302 GET /tree? (172.16.164.37) 5.43ms
+[I 15:18:02.407 NotebookApp] 302 POST /login?next=%2Ftree%3F (172.16.164.37) 7.44ms
+[I 15:21:06.287 NotebookApp] Saving file at /DropBox.py
+[I 15:22:59.081 NotebookApp] Saving file at /DropBox.py
+[I 15:24:01.816 NotebookApp] Saving file at /DropBox.py
+[I 15:24:05.836 NotebookApp] Saving file at /DropBox.py
+[I 15:24:41.394 NotebookApp] Saving file at /DropBox.py
+[I 15:24:46.381 NotebookApp] Saving file at /DropBox.py
+[I 15:25:31.615 NotebookApp] Saving file at /DropBox.py
+[I 15:26:47.582 NotebookApp] Saving file at /DropBox.py
+[I 15:26:58.808 NotebookApp] Saving file at /DropBox.py
+[I 15:29:20.973 NotebookApp] Saving file at /DropBox.py
+[I 15:29:25.769 NotebookApp] Saving file at /DropBox.py
+[I 15:30:09.196 NotebookApp] Saving file at /DropBox.py
+[I 15:31:02.908 NotebookApp] Saving file at /DropBox.py
+[I 15:31:05.953 NotebookApp] Saving file at /DropBox.py
+[I 15:31:10.263 NotebookApp] Saving file at /DropBox.py
+[I 15:31:17.685 NotebookApp] Saving file at /DropBox.py
+[I 15:34:10.413 NotebookApp] Saving file at /DropBox.py
+[I 15:35:16.609 NotebookApp] Saving file at /DropBox.py
+[I 15:36:14.177 NotebookApp] Saving file at /DropBox.py
+[I 15:36:18.985 NotebookApp] Saving file at /DropBox.py
+[I 15:36:42.384 NotebookApp] Saving file at /DropBox.py
+[I 15:36:59.031 NotebookApp] Saving file at /DropBox.py
+[I 15:37:15.826 NotebookApp] Saving file at /DropBox.py
+[I 15:37:19.267 NotebookApp] Saving file at /DropBox.py
+[I 15:37:42.878 NotebookApp] Saving file at /DropBox.py
+[I 15:38:54.302 NotebookApp] Saving file at /DropBox.py
+[I 15:39:05.220 NotebookApp] Saving file at /DropBox.py
+[I 15:39:49.416 NotebookApp] Saving file at /DropBox.py
+[I 15:40:04.674 NotebookApp] Saving file at /DropBox.py
+[I 15:40:15.401 NotebookApp] Saving file at /DropBox.py
+[I 15:44:11.446 NotebookApp] Saving file at /DropBox.py
+[I 15:44:13.139 NotebookApp] Saving file at /DropBox.py
+[I 15:44:35.255 NotebookApp] Saving file at /DropBox.py
+[I 15:44:46.561 NotebookApp] Saving file at /DropBox.py
+[I 15:44:52.154 NotebookApp] Saving file at /DropBox.py
+[I 15:44:57.662 NotebookApp] Saving file at /DropBox.py
+[I 15:45:08.468 NotebookApp] Saving file at /DropBox.py
+[I 15:45:15.176 NotebookApp] Saving file at /DropBox.py
+[I 15:45:18.919 NotebookApp] Saving file at /DropBox.py
+[I 15:45:29.916 NotebookApp] Saving file at /DropBox.py
+[I 15:45:47.865 NotebookApp] Saving file at /DropBox.py
+[I 15:45:59.331 NotebookApp] Saving file at /DropBox.py
+[I 15:46:05.452 NotebookApp] Saving file at /DropBox.py
+[I 15:46:08.052 NotebookApp] Saving file at /DropBox.py
+[W 15:53:59.667 NotebookApp] Blocking request with no referer
+[W 15:53:59.673 NotebookApp] 403 GET /files/templates/%7B%7B (172.16.164.37): Blocking request from unknown origin
+[W 15:53:59.786 NotebookApp] 403 GET /files/templates/%7B%7B (172.16.164.37) 126.84ms referer=None
+[W 15:54:09.695 NotebookApp] Blocking request with no referer
+[W 15:54:09.696 NotebookApp] 403 GET /files/templates/%7B%7B (172.16.164.37): Blocking request from unknown origin
+[W 15:54:09.702 NotebookApp] 403 GET /files/templates/%7B%7B (172.16.164.37) 9.56ms referer=None
+[W 15:54:11.863 NotebookApp] Blocking request with no referer
+[W 15:54:11.864 NotebookApp] 403 GET /files/templates/%7B%7B (172.16.164.37): Blocking request from unknown origin
+[W 15:54:11.874 NotebookApp] 403 GET /files/templates/%7B%7B (172.16.164.37) 14.49ms referer=None
+[W 15:54:35.122 NotebookApp] Blocking request with no referer
+[W 15:54:35.123 NotebookApp] 403 GET /files/templates/%7B%7B (172.16.164.37): Blocking request from unknown origin
+[W 15:54:35.342 NotebookApp] 403 GET /files/templates/%7B%7B (172.16.164.37) 227.31ms referer=None
+[W 15:58:34.684 NotebookApp] Blocking request with no referer
+[W 15:58:34.687 NotebookApp] 403 GET /files/templates/%7B%7B (172.16.164.37): Blocking request from unknown origin
+[W 15:58:34.694 NotebookApp] 403 GET /files/templates/%7B%7B (172.16.164.37) 13.41ms referer=None
+[I 15:59:48.399 NotebookApp] Saving file at /templates/DetectMode.html
+[I 16:01:31.035 NotebookApp] Saving file at /templates/DetectMode.html
+[I 16:01:43.343 NotebookApp] Saving file at /templates/Message.html
+[I 16:01:47.570 NotebookApp] Saving file at /templates/Message.html
+[I 16:01:49.721 NotebookApp] Saving file at /templates/Message.html
+[I 16:01:53.347 NotebookApp] Saving file at /templates/Message.html
+[I 16:01:59.795 NotebookApp] Saving file at /templates/Message.html
+[I 16:02:13.047 NotebookApp] Saving file at /templates/ProtectMode.html
+[I 16:02:36.481 NotebookApp] Saving file at /templates/RobbedMode.html
+[I 16:02:50.527 NotebookApp] Saving file at /templates/DetectMode.html
+[I 16:04:14.335 NotebookApp] Saving file at /templates/DetectMode.html
+[I 16:04:23.393 NotebookApp] Saving file at /templates/DetectMode.html
+[I 16:05:27.633 NotebookApp] Saving file at /templates/DetectMode.html
+[I 16:05:54.609 NotebookApp] Saving file at /templates/DetectMode.html
+[I 16:05:54.629 NotebookApp] Saving file at /templates/DetectMode.html
+[I 16:05:55.827 NotebookApp] Saving file at /templates/DetectMode.html
+[I 16:06:10.076 NotebookApp] Saving file at /templates/ProtectMode.html
+[I 16:06:21.675 NotebookApp] Saving file at /templates/RobbedMode.html
+[I 16:06:22.699 NotebookApp] Saving file at /templates/RobbedMode.html
+[I 16:07:52.695 NotebookApp] Saving file at /templates/DetectMode.html
+[I 16:08:08.350 NotebookApp] Saving file at /templates/Message.html
+[I 16:08:21.410 NotebookApp] Saving file at /templates/RobbedMode.html
+[W 16:08:45.984 NotebookApp] Blocking request with no referer
+[W 16:08:45.985 NotebookApp] 403 GET /files/templates/%7B%7B (172.16.164.37): Blocking request from unknown origin
+[W 16:08:45.999 NotebookApp] 403 GET /files/templates/%7B%7B (172.16.164.37) 18.58ms referer=None
+[I 16:08:57.519 NotebookApp] Saving file at /templates/ProtectMode.html
+[I 16:09:50.062 NotebookApp] 302 GET / (172.16.164.37) 3.32ms
+[I 16:10:14.751 NotebookApp] Saving file at /templates/DetectMode.html
+[I 16:10:15.651 NotebookApp] Saving file at /templates/DetectMode.html
+[I 16:10:19.743 NotebookApp] Saving file at /templates/DetectMode.html
+[I 16:10:29.163 NotebookApp] Saving file at /templates/Message.html
+[I 16:10:41.633 NotebookApp] Saving file at /templates/ProtectMode.html
+[I 16:10:59.620 NotebookApp] Saving file at /templates/RobbedMode.html
+[W 16:12:59.653 NotebookApp] Blocking request with no referer
+[W 16:12:59.654 NotebookApp] 403 GET /files/templates/%7B%7B (172.16.164.37): Blocking request from unknown origin
+[W 16:12:59.666 NotebookApp] 403 GET /files/templates/%7B%7B (172.16.164.37) 16.55ms referer=None
+[W 16:13:45.403 NotebookApp] Blocking request with no referer
+[W 16:13:45.404 NotebookApp] 403 GET /files/templates/%7B%7B (172.16.164.37): Blocking request from unknown origin
+[W 16:13:45.455 NotebookApp] 403 GET /files/templates/%7B%7B (172.16.164.37) 68.88ms referer=None
+[I 16:16:55.790 NotebookApp] Saving file at /templates/DetectMode.html
+[I 16:18:10.485 NotebookApp] Saving file at /templates/DetectMode.html
+[I 16:19:10.530 NotebookApp] 302 GET / (172.16.164.37) 2.00ms
+[W 16:19:13.364 NotebookApp] Blocking request with no referer
+[W 16:19:13.364 NotebookApp] 403 GET /files/templates/%7B%7B (172.16.164.37): Blocking request from unknown origin
+[W 16:19:13.371 NotebookApp] 403 GET /files/templates/%7B%7B (172.16.164.37) 10.51ms referer=None
+[I 16:20:41.698 NotebookApp] Saving file at /templates/DetectMode.html
+[I 16:20:42.825 NotebookApp] Saving file at /templates/DetectMode.html
+[I 16:20:59.606 NotebookApp] Saving file at /templates/Message.html
+[I 16:21:14.482 NotebookApp] Saving file at /templates/ProtectMode.html
+[I 16:21:30.319 NotebookApp] Saving file at /templates/RobbedMode.html
+[I 16:23:05.999 NotebookApp] Saving file at /DropBox.py
+[I 16:23:06.514 NotebookApp] Saving file at /DropBox.py
+[I 16:23:07.083 NotebookApp] Saving file at /DropBox.py
+[I 16:25:21.028 NotebookApp] Saving file at /DropBox.py
+[I 16:25:21.582 NotebookApp] Saving file at /DropBox.py
+[I 16:25:25.876 NotebookApp] Saving file at /DropBox.py
+[I 16:28:02.660 NotebookApp] Saving file at /DropBox.py
+[I 16:28:19.578 NotebookApp] Saving file at /DropBox.py
+[I 16:28:41.185 NotebookApp] Saving file at /DropBox.py
+[I 16:35:00.177 NotebookApp] Saving file at /DropBox.py
+[I 16:39:11.415 NotebookApp] Saving file at /DropBox.py
+[I 16:39:14.335 NotebookApp] Saving file at /DropBox.py
+[I 16:39:20.424 NotebookApp] Saving file at /DropBox.py
+[I 16:44:40.029 NotebookApp] Saving file at /DropBox.py
+[I 16:44:45.013 NotebookApp] Saving file at /DropBox.py
+[I 16:45:14.361 NotebookApp] Saving file at /DropBox.py
+[I 16:46:24.954 NotebookApp] Saving file at /DropBox.py
+[I 16:46:29.036 NotebookApp] Saving file at /DropBox.py
+[I 16:47:07.932 NotebookApp] Saving file at /DropBox.py
+[I 16:47:16.055 NotebookApp] Saving file at /DropBox.py
+[I 16:48:06.593 NotebookApp] Saving file at /DropBox.py
+[I 16:48:08.487 NotebookApp] Saving file at /DropBox.py
+[I 16:48:16.523 NotebookApp] Saving file at /DropBox.py
+[I 16:48:21.932 NotebookApp] Saving file at /DropBox.py
+[I 16:48:29.387 NotebookApp] Saving file at /DropBox.py
+[I 16:48:43.254 NotebookApp] Saving file at /DropBox.py
+[I 16:49:00.748 NotebookApp] Saving file at /DropBox.py
+[I 16:49:05.377 NotebookApp] Saving file at /DropBox.py
+[I 16:49:17.160 NotebookApp] Saving file at /DropBox.py
+[I 16:49:24.136 NotebookApp] Saving file at /DropBox.py
+[I 16:50:50.866 NotebookApp] Saving file at /DropBox.py
+[I 16:53:17.633 NotebookApp] Saving file at /DropBox.py
+[I 16:53:23.286 NotebookApp] Saving file at /DropBox.py
+[I 16:53:40.704 NotebookApp] Saving file at /DropBox.py
+[I 16:53:59.069 NotebookApp] Saving file at /DropBox.py
+[I 16:54:02.915 NotebookApp] Saving file at /DropBox.py
+[I 16:54:05.759 NotebookApp] Saving file at /DropBox.py
+[I 16:54:26.105 NotebookApp] Saving file at /DropBox.py
+[I 16:54:32.557 NotebookApp] Saving file at /DropBox.py
+[I 16:55:34.923 NotebookApp] Saving file at /DropBox.py
+[I 16:56:00.539 NotebookApp] Saving file at /DropBox.py
+[I 16:57:29.346 NotebookApp] Saving file at /DropBox.py
+[I 16:57:31.660 NotebookApp] Saving file at /DropBox.py
+[I 16:57:52.393 NotebookApp] Saving file at /DropBox.py
+[I 16:57:59.963 NotebookApp] Saving file at /DropBox.py
+[I 16:58:04.086 NotebookApp] Saving file at /DropBox.py
+[I 16:58:04.859 NotebookApp] Saving file at /DropBox.py
+[I 16:58:43.782 NotebookApp] Saving file at /DropBox.py
+[I 16:58:48.876 NotebookApp] Saving file at /DropBox.py
+[I 16:59:37.330 NotebookApp] Saving file at /DropBox.py
+[I 17:00:27.975 NotebookApp] Saving file at /DropBox.py
+[I 17:00:59.287 NotebookApp] Saving file at /DropBox.py
+[I 17:01:21.947 NotebookApp] Saving file at /DropBox.py
+[I 17:02:01.986 NotebookApp] Saving file at /DropBox.py
+[I 17:02:03.023 NotebookApp] Saving file at /DropBox.py
+[I 17:03:39.427 NotebookApp] Saving file at /DropBox.py
+[I 17:03:44.521 NotebookApp] Saving file at /DropBox.py
+[I 17:03:53.992 NotebookApp] Saving file at /DropBox.py
+[I 17:05:13.921 NotebookApp] Saving file at /DropBox.py
+[I 17:05:14.947 NotebookApp] Saving file at /DropBox.py
+[I 17:05:17.882 NotebookApp] Saving file at /DropBox.py
+[I 17:05:22.067 NotebookApp] Saving file at /DropBox.py
+[I 17:05:30.748 NotebookApp] Saving file at /DropBox.py
+[I 17:05:33.945 NotebookApp] Saving file at /DropBox.py
+[I 17:07:39.187 NotebookApp] Saving file at /DropBox.py
+[I 17:07:41.553 NotebookApp] Saving file at /DropBox.py
+[I 17:07:55.497 NotebookApp] Saving file at /DropBox.py
+[I 17:08:02.957 NotebookApp] Saving file at /DropBox.py
+[I 17:09:29.195 NotebookApp] Saving file at /DropBox.py
+[I 17:09:40.848 NotebookApp] Saving file at /DropBox.py
+[I 17:11:17.749 NotebookApp] Saving file at /DropBox.py
+[I 17:11:32.565 NotebookApp] Saving file at /DropBox.py
+[I 17:11:33.639 NotebookApp] Saving file at /DropBox.py
+[I 17:11:34.369 NotebookApp] Saving file at /DropBox.py
+[I 17:11:36.941 NotebookApp] Saving file at /DropBox.py
+[I 17:12:24.491 NotebookApp] Saving file at /DropBox.py
+[I 17:12:25.677 NotebookApp] Saving file at /DropBox.py
+[I 17:12:45.779 NotebookApp] Saving file at /DropBox.py
+[I 17:12:58.651 NotebookApp] Saving file at /DropBox.py
+[I 17:14:37.923 NotebookApp] Serving notebooks from local directory: /root/Embedded_15
+[I 17:14:37.925 NotebookApp] The Jupyter Notebook is running at:
+[I 17:14:37.925 NotebookApp] http://raspberrypi:8888/
+[I 17:14:37.925 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 17:14:40.947 NotebookApp] 302 GET / (172.16.164.37) 8.62ms
+[I 17:14:58.658 NotebookApp] Saving file at /DropBox.py
+[I 17:15:01.245 NotebookApp] Saving file at /DropBox.py
+[I 17:16:21.493 NotebookApp] Saving file at /DropBox.py
+[I 17:16:28.225 NotebookApp] Saving file at /DropBox.py
+[I 17:16:39.780 NotebookApp] Saving file at /DropBox.py
+[I 17:16:51.064 NotebookApp] Saving file at /DropBox.py
+[I 17:18:55.373 NotebookApp] Saving file at /DropBox.py
+[I 17:21:13.490 NotebookApp] Saving file at /DropBox.py
+[I 17:21:41.862 NotebookApp] Saving file at /DropBox.py
+[I 17:21:42.592 NotebookApp] Saving file at /DropBox.py
+[I 17:25:11.448 NotebookApp] Saving file at /DropBox.py
+[I 17:26:53.174 NotebookApp] Saving file at /DropBox.py
+[I 17:27:07.024 NotebookApp] Saving file at /DropBox.py
+[I 17:27:08.096 NotebookApp] Saving file at /DropBox.py
+[I 17:27:12.760 NotebookApp] Saving file at /DropBox.py
+[I 17:27:15.849 NotebookApp] Saving file at /DropBox.py
+[I 17:27:35.499 NotebookApp] Saving file at /DropBox.py
+[I 17:27:40.505 NotebookApp] Saving file at /DropBox.py
+[I 17:27:41.206 NotebookApp] Saving file at /DropBox.py
+[I 17:27:49.092 NotebookApp] Saving file at /DropBox.py
+[I 17:28:02.023 NotebookApp] Saving file at /DropBox.py
+[I 17:28:05.229 NotebookApp] Saving file at /DropBox.py
+[I 17:28:07.597 NotebookApp] Saving file at /DropBox.py
+[I 17:29:11.620 NotebookApp] Saving file at /DropBox.py
+[I 17:29:25.806 NotebookApp] Saving file at /DropBox.py
+[I 17:29:28.682 NotebookApp] Saving file at /DropBox.py
+[I 17:29:34.627 NotebookApp] Saving file at /DropBox.py
+[I 17:29:37.790 NotebookApp] Saving file at /DropBox.py
+[I 17:30:27.832 NotebookApp] 302 GET / (172.16.164.37) 8.28ms
+[I 17:30:57.842 NotebookApp] Saving file at /DropBox.py
+[I 17:31:03.488 NotebookApp] Saving file at /DropBox.py
+[I 17:31:12.751 NotebookApp] Saving file at /DropBox.py
+[I 17:31:34.614 NotebookApp] Saving file at /DropBox.py
+[I 17:34:05.537 NotebookApp] Saving file at /DropBox.py
+[I 17:34:06.557 NotebookApp] Saving file at /DropBox.py
+[I 17:34:08.626 NotebookApp] Saving file at /DropBox.py
+[W 17:35:03.925 NotebookApp] 400 GET /api/contents/static/ex2.h264?type=file&format=text&_=1575966902662 (172.16.164.37): /root/Embedded_15/static/ex2.h264 is not UTF-8 encoded
+[W 17:35:03.928 NotebookApp] /root/Embedded_15/static/ex2.h264 is not UTF-8 encoded
+[W 17:35:03.930 NotebookApp] 400 GET /api/contents/static/ex2.h264?type=file&format=text&_=1575966902662 (172.16.164.37) 24.65ms referer=http://172.16.164.38:8888/edit/static/ex2.h264
+[I 17:35:28.172 NotebookApp] Saving file at /DropBox.py
+[I 17:35:28.987 NotebookApp] Saving file at /DropBox.py
+[W 17:36:19.220 NotebookApp] 400 GET /api/contents/static/ex2.h264?type=file&format=text&_=1575966977978 (172.16.164.37): /root/Embedded_15/static/ex2.h264 is not UTF-8 encoded
+[W 17:36:19.222 NotebookApp] /root/Embedded_15/static/ex2.h264 is not UTF-8 encoded
+[W 17:36:19.228 NotebookApp] 400 GET /api/contents/static/ex2.h264?type=file&format=text&_=1575966977978 (172.16.164.37) 17.72ms referer=http://172.16.164.38:8888/edit/static/ex2.h264
+[I 17:39:54.882 NotebookApp] Saving file at /DropBox.py
+[I 17:41:05.071 NotebookApp] Saving file at /DropBox.py
+[I 17:41:07.469 NotebookApp] Saving file at /DropBox.py
+[I 17:46:04.459 NotebookApp] Saving file at /DropBox.py
+[W 17:46:27.539 NotebookApp] delete /static/ex2.h264
+[W 17:46:28.768 NotebookApp] delete /static/ex2.mp4
+[I 17:49:18.723 NotebookApp] Saving file at /DropBox.py
+[I 17:50:44.749 NotebookApp] Saving file at /DropBox.py
+[I 17:51:07.439 NotebookApp] Saving file at /DropBox.py
+[I 17:52:16.028 NotebookApp] Saving file at /DropBox.py
+[I 17:57:12.344 NotebookApp] Saving file at /templates/RobbedMode.html
+[I 17:57:19.050 NotebookApp] Saving file at /templates/RobbedMode.html
+[I 17:57:21.306 NotebookApp] Saving file at /templates/RobbedMode.html
+[I 17:57:25.947 NotebookApp] Saving file at /templates/RobbedMode.html

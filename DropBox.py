@@ -7,7 +7,9 @@ import RPi.GPIO as GPIO
 import json
 import telepot
 from telepot.loop import MessageLoop
-
+import os
+import subprocess
+ 
 GPIO.setmode(GPIO.BCM)
 irpin = 21 # 적외선 센서
 led = 20 # 표시등
@@ -26,6 +28,7 @@ GPIO.output(led, GPIO.LOW)
 
 app = Flask(__name__)
 
+ip = "172.16.164.38"
 
 def Send(Message):
     telegram_id = '-328726901' #아이디 입력
@@ -36,26 +39,34 @@ def Send(Message):
 class AsyncTask:
     def Shot(self):
         camera = picamera.PiCamera()
-        camera.resolution = (800, 600)
+        camera.resolution = (350, 400)
         camera.capture('static/ex1.jpg')
         time.sleep(0.1)
         camera.close()
-
+        
+    def Record(self):
+        camera2 = picamera.PiCamera()
+        camera2.resolution= (350, 400)
+        camera2.start_recording('static/ex2.h264')
+        subprocess.call('MP4Box -add static/ex2.h264 static/ex2.mp4', shell=True)
+        camera2.wait_recording(10)
+        camera2.stop_recording()
+        camera2.close
         #return render_template("DropBox.html")
 
     def Detector(self):
-        global Mode
+        global Mode, ip, t3
         if x != 1:
             global Time
             Time += 1
             print(Time)
             if Time == 5:
-                threading.Timer(1,self.Shot).start()
+                threading.Timer(1,at.Shot).start()  #사진 찍기
                 print("물체가 감지되었습니다.")
-                Send("물체가 감지되었습니다. http://203.252.166.155/detect")
+                Send("물체가 감지되었습니다. http://"+ ip +"/detect")
                 Time = 0
             else:
-                threading.Timer(1,self.Detector).start()
+                threading.Timer(1,at.Detector).start()
         else:
             Time =0
             Mode = 0
@@ -110,11 +121,11 @@ def action(action):
 
 @app.route("/protect")
 def protect():
-    global Mode
+    global Mode, ip
     if x != 1 :
         Mode = 1 # 도난방지모드
         print("도난방지모드로 전환되었습니다.")
-        Send("택배를 보호중입니다. http://203.252.166.155/protect")    
+        Send("택배를 보호중입니다. http://"+ ip +"/protect")
         message = "택배를 보호중입니다."
         templateData = {
             'message' : message,
@@ -154,8 +165,8 @@ if __name__ == '__main__':
             time.sleep(0.1)
             if x != 1 : # 감지 O
                 if FirstDetect == False and Mode == 0: # 처음감지
-                    print("물체가 감지되었습니다.")
-                    at.Detector() # 10초 카운트
+                    #print("물체가 감지되었습니다.")
+                    at.Detector()
                     FirstDetect = True
                 GPIO.output(led, GPIO.HIGH)
                     
@@ -164,9 +175,9 @@ if __name__ == '__main__':
                 if Mode == 1: # 도난방지모드일때 감지X == 도난
                     Mode = 2 # 도난
                     print("도난이 감지되었습니다..!")
-                    Send("도난이 감지되었습니다..! http://203.252.166.155/robbed")
-                    threading.Timer(1,at.Shot).start()
-                    at.Alert()
+                    Send("도난이 감지되었습니다..! http://"+ ip +"/robbed")
+                    threading.Timer(1,at.Record).start()
+                    threading.Timer(1,at.Alert).start()
                     Mode = 0 # 도난감지모드
                 GPIO.output(led, GPIO.LOW)
                 FirstDetect = False
