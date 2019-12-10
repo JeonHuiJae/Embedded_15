@@ -11,8 +11,6 @@ import os
 from subprocess import call
 from datetime import datetime 
 
-curName = datetime.now()
-        
 GPIO.setmode(GPIO.BCM)
 irpin = 21 # 적외선 센서
 led = 20 # 표시등
@@ -22,6 +20,8 @@ FirstDetect = False # 처음감지됨 표시ㅇㅇ
 x = 0
 fileNum = 0
 
+curName = '00'
+    
 #- mav setting
 pygame.mixer.init()
 beep = pygame.mixer.Sound("beep3.wav")
@@ -32,7 +32,7 @@ GPIO.output(led, GPIO.LOW)
 
 app = Flask(__name__)
 
-ip = "172.16.164.38"
+ip = "203.252.166.227"
 
 def Send(Message):
     telegram_id = '-328726901' #아이디 입력
@@ -49,14 +49,19 @@ class AsyncTask:
         camera.close()
         
     def Record(self):
+        global curName
         camera2 = picamera.PiCamera()
         camera2.resolution= (350, 400)
-        curName = datetime.now()
+        
+        now = datetime.now()
+        curName = now.strftime('%Y%m%d%H%M%S')
+        
         camera2.start_recording('static/'+str(curName)+'.h264')
         camera2.wait_recording(5)
         camera2.stop_recording()
         camera2.close()
-        
+
+        print(curName)
         call("MP4Box -add static/"+str(curName)+".h264 static/"+str(curName)+".mp4", shell=True)
         print("인코딩 완려!!!")
         #return render_template("DropBox.html")
@@ -147,6 +152,7 @@ def protect():
             
 @app.route("/robbed")
 def robbed():
+    global curName
     message = "도난이 감지되었습니다!!"
     templateData = {
         'curName' : curName,

@@ -591,3 +591,45 @@ Examples
 [W 18:41:54.428 NotebookApp] delete /static/ex2.h264
 [W 18:41:54.443 NotebookApp] delete /static/ex2.mp4
 [I 18:42:39.486 NotebookApp] Saving file at /DropBox.py
+[I 20:48:19.315 NotebookApp] Serving notebooks from local directory: /root/Embedded_15
+[I 20:48:19.325 NotebookApp] The Jupyter Notebook is running at:
+[I 20:48:19.326 NotebookApp] http://raspberrypi:8888/
+[I 20:48:19.326 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 20:48:32.072 NotebookApp] 302 GET / (203.252.166.152) 7.43ms
+[I 20:48:32.084 NotebookApp] 302 GET /tree? (203.252.166.152) 7.65ms
+[I 20:48:34.675 NotebookApp] 302 POST /login?next=%2Ftree%3F (203.252.166.152) 27.20ms
+[I 20:53:05.228 NotebookApp] Saving file at /DropBox.py
+[I 20:59:48.657 NotebookApp] Serving notebooks from local directory: /root/Embedded_15
+[I 20:59:48.659 NotebookApp] The Jupyter Notebook is running at:
+[I 20:59:48.660 NotebookApp] http://raspberrypi:8888/
+[I 20:59:48.660 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 21:00:28.553 NotebookApp] Saving file at /DropBox.py
+[I 21:00:29.657 NotebookApp] Saving file at /DropBox.py
+[I 21:00:30.488 NotebookApp] Saving file at /DropBox.py
+[I 21:00:32.353 NotebookApp] Saving file at /DropBox.py
+[I 21:04:52.948 NotebookApp] Saving file at /DropBox.py
+[I 21:07:20.671 NotebookApp] Saving file at /DropBox.py
+[I 21:07:41.901 NotebookApp] Saving file at /DropBox.py
+[I 21:08:00.800 NotebookApp] Saving file at /DropBox.py
+[I 21:08:12.474 NotebookApp] Saving file at /DropBox.py
+[I 21:08:14.993 NotebookApp] Saving file at /DropBox.py
+[I 21:08:52.727 NotebookApp] Saving file at /DropBox.py
+[I 21:09:00.888 NotebookApp] Saving file at /DropBox.py
+[I 21:09:06.126 NotebookApp] Saving file at /DropBox.py
+[I 21:09:10.304 NotebookApp] Saving file at /DropBox.py
+[I 21:11:10.040 NotebookApp] Saving file at /DropBox.py
+[I 21:11:10.752 NotebookApp] Saving file at /DropBox.py
+[I 21:13:04.452 NotebookApp] Saving file at /DropBox.py
+[I 21:15:37.786 NotebookApp] Saving file at /DropBox.py
+[I 21:15:47.592 NotebookApp] 302 GET /login?next=%2Ftree%3F (203.252.166.152) 12.16ms
+[I 21:17:38.702 NotebookApp] Saving file at /DropBox.py
+[I 21:19:45.785 NotebookApp] Saving file at /DropBox.py
+[I 21:20:00.257 NotebookApp] Saving file at /DropBox.py
+[I 21:21:02.419 NotebookApp] Saving file at /DropBox.py
+[I 21:21:35.721 NotebookApp] Saving file at /templates/RobbedMode.html
+[I 21:21:36.929 NotebookApp] Saving file at /templates/RobbedMode.html
+[W 21:21:47.228 NotebookApp] Blocking request with no referer
+[W 21:21:47.234 NotebookApp] 403 GET /files/templates/static/%7B%7BcurName%7D%7D.mp4 (203.252.166.152): Blocking request from unknown origin
+[W 21:21:47.341 NotebookApp] 403 GET /files/templates/static/%7B%7BcurName%7D%7D.mp4 (203.252.166.152) 116.14ms referer=None
+[I 21:22:00.334 NotebookApp] Saving file at /templates/RobbedMode.html
+[I 21:23:17.193 NotebookApp] Saving file at /DropBox.py
