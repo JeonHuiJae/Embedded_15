@@ -120,6 +120,7 @@ def action(action):
         message = "수령처리되었습니다."
         Send("택배 수령이 완료되었습니다.")
         Mode = 0
+        FirstDetect = False
     else :
         if x != 1 :
             message = "택배가 아닌 것으로 처리되었습니다."
@@ -196,6 +197,7 @@ if __name__ == '__main__':
                     threading.Timer(0,at.Record).start()
                     at.Alert()
                     Mode = 0 # 도난감지모드
+                    FirstDetect = False
                 GPIO.output(led, GPIO.LOW)
                 FirstDetect = False
 

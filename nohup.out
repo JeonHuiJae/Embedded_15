@@ -683,3 +683,36 @@ Examples
 [I 21:59:14.573 NotebookApp] Saving file at /DropBox.py
 [I 21:59:31.302 NotebookApp] Saving file at /DropBox.py
 [I 21:59:39.530 NotebookApp] Saving file at /DropBox.py
+[I 22:01:18.684 NotebookApp] Saving file at /DropBox.py
+[I 22:01:46.478 NotebookApp] Saving file at /DropBox.py
+[I 22:01:47.563 NotebookApp] Saving file at /DropBox.py
+[I 22:02:21.120 NotebookApp] Saving file at /templates/DetectMode.html
+[W 22:02:27.008 NotebookApp] Blocking request with no referer
+[W 22:02:27.009 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:02:27.023 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 18.75ms referer=None
+[I 22:02:34.412 NotebookApp] Saving file at /templates/DetectMode.html
+[I 22:04:06.805 NotebookApp] Saving file at /templates/DetectMode.html
+[I 22:04:20.293 NotebookApp] Saving file at /templates/DetectMode.html
+[I 22:05:18.826 NotebookApp] Saving file at /templates/DetectMode.html
+[I 22:05:27.466 NotebookApp] Saving file at /templates/DetectMode.html
+[I 22:06:06.042 NotebookApp] Saving file at /templates/DetectMode.html
+[I 22:06:12.569 NotebookApp] Saving file at /templates/Message.html
+[I 22:06:18.659 NotebookApp] Saving file at /templates/ProtectMode.html
+[I 22:06:25.460 NotebookApp] Saving file at /templates/RobbedMode.html
+[I 22:07:59.678 NotebookApp] Saving file at /DropBox.py
+[I 22:10:56.652 NotebookApp] Saving file at /DropBox.py
+[W 22:13:11.577 NotebookApp] delete /static/20191210212807.h264
+[W 22:13:11.629 NotebookApp] delete /static/20191210212807.mp4
+[W 22:13:11.703 NotebookApp] delete /static/20191210212854.h264
+[W 22:13:11.717 NotebookApp] delete /static/20191210212854.mp4
+[W 22:13:11.733 NotebookApp] delete /static/20191210213019.h264
+[W 22:13:11.756 NotebookApp] delete /static/20191210213019.mp4
+[W 22:13:11.793 NotebookApp] delete /static/20191210213236.h264
+[W 22:13:11.811 NotebookApp] delete /static/20191210213236.mp4
+[W 22:13:11.862 NotebookApp] delete /static/20191210213309.h264
+[W 22:13:11.886 NotebookApp] delete /static/20191210213309.mp4
+[W 22:13:11.899 NotebookApp] delete /static/20191210215022.h264
+[W 22:13:11.911 NotebookApp] delete /static/20191210215022.mp4
+[W 22:13:11.929 NotebookApp] delete /static/20191210221009.h264
+[W 22:13:11.948 NotebookApp] delete /static/20191210221009.mp4
+[W 22:13:11.974 NotebookApp] delete /static/ex1.jpg
