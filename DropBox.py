@@ -75,7 +75,7 @@ class AsyncTask:
             if Time == 5:
                 threading.Timer(1,at.Shot).start()  #사진 찍기
                 print("물체가 감지되었습니다.")
-                Send("* 물체가 감지되었습니다.\n* 택배가 맞으면 Yes, 아니면 No를 눌러주세요.\nhttp://"+ ip +"/detect")
+                Send("< 물체가 감지되었습니다. >\n* 택배가 맞으면 Yes, 아니면 No를 눌러주세요.\nhttp://"+ ip +"/detect")
                 Time = 0
             else:
                 threading.Timer(1,at.Detector).start()
@@ -141,7 +141,7 @@ def protect():
     if x != 1 :
         Mode = 1 # 도난방지모드
         print("도난방지모드로 전환되었습니다.")
-        Send("* 택배를 보호중입니다.\n* 택배를 수령하기전에 수령을 눌러주세요.\nhttp://"+ ip +"/protect")
+        Send("< 택배를 보호중입니다. >\n* 택배를 수령하기전에 수령을 눌러주세요.\nhttp://"+ ip +"/protect")
         message = "택배를 보호중입니다."
         templateData = {
             'message' : message,
