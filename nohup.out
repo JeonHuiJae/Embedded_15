@@ -716,3 +716,97 @@ Examples
 [W 22:13:11.929 NotebookApp] delete /static/20191210221009.h264
 [W 22:13:11.948 NotebookApp] delete /static/20191210221009.mp4
 [W 22:13:11.974 NotebookApp] delete /static/ex1.jpg
+[I 22:16:55.421 NotebookApp] Saving file at /DropBox.py
+[I 22:19:16.903 NotebookApp] Saving file at /DropBox.py
+[I 22:19:20.857 NotebookApp] Saving file at /DropBox.py
+[I 22:19:23.723 NotebookApp] Saving file at /DropBox.py
+[I 22:19:31.106 NotebookApp] Saving file at /DropBox.py
+[I 22:22:26.190 NotebookApp] Saving file at /DropBox.py
+[I 22:23:12.647 NotebookApp] Saving file at /templates/DetectMode.html
+[I 22:25:11.578 NotebookApp] Saving file at /templates/DetectMode.html
+[W 22:25:16.344 NotebookApp] Blocking request with no referer
+[W 22:25:16.345 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:25:16.353 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 12.80ms referer=None
+[W 22:25:19.287 NotebookApp] 404 GET /protect (203.252.166.152) 9.82ms referer=None
+[I 22:25:24.699 NotebookApp] Saving file at /templates/DetectMode.html
+[W 22:25:26.269 NotebookApp] Blocking request with no referer
+[W 22:25:26.270 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:25:26.280 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 14.13ms referer=None
+[I 22:25:34.015 NotebookApp] Saving file at /templates/DetectMode.html
+[W 22:25:35.864 NotebookApp] Blocking request with no referer
+[W 22:25:35.865 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:25:35.880 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 18.98ms referer=None
+[I 22:25:56.510 NotebookApp] Saving file at /templates/DetectMode.html
+[W 22:25:57.660 NotebookApp] Blocking request with no referer
+[W 22:25:57.661 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:25:57.692 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 35.74ms referer=None
+[W 22:25:58.641 NotebookApp] Blocking request with no referer
+[W 22:25:58.642 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:25:58.656 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 18.70ms referer=None
+[I 22:26:01.542 NotebookApp] Saving file at /templates/DetectMode.html
+[W 22:26:03.296 NotebookApp] Blocking request with no referer
+[W 22:26:03.298 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:26:03.310 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 18.65ms referer=None
+[W 22:26:04.695 NotebookApp] 404 GET /protect (203.252.166.152) 23.74ms referer=None
+[W 22:26:10.851 NotebookApp] Blocking request with no referer
+[W 22:26:10.852 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:26:10.874 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 28.12ms referer=None
+[I 22:26:27.261 NotebookApp] Saving file at /templates/DetectMode.html
+[W 22:26:29.022 NotebookApp] Blocking request with no referer
+[W 22:26:29.023 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:26:29.032 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 13.04ms referer=None
+[W 22:26:31.049 NotebookApp] Blocking request with no referer
+[W 22:26:31.050 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:26:31.058 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 12.75ms referer=None
+[I 22:26:43.360 NotebookApp] Saving file at /templates/DetectMode.html
+[I 22:27:19.070 NotebookApp] Saving file at /templates/DetectMode.html
+[I 22:27:20.908 NotebookApp] Saving file at /templates/DetectMode.html
+[W 22:27:21.685 NotebookApp] Blocking request with no referer
+[W 22:27:21.686 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:27:21.695 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 28.20ms referer=None
+[W 22:27:23.140 NotebookApp] Blocking request with no referer
+[W 22:27:23.140 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:27:23.152 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 16.86ms referer=None
+[I 22:27:41.825 NotebookApp] Saving file at /templates/DetectMode.html
+[W 22:27:43.101 NotebookApp] Blocking request with no referer
+[W 22:27:43.102 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:27:43.112 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 14.42ms referer=None
+[W 22:27:44.369 NotebookApp] Blocking request with no referer
+[W 22:27:44.370 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:27:44.379 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 14.83ms referer=None
+[I 22:27:51.468 NotebookApp] Saving file at /templates/DetectMode.html
+[W 22:27:52.794 NotebookApp] Blocking request with no referer
+[W 22:27:52.795 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:27:52.815 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 23.90ms referer=None
+[I 22:28:31.358 NotebookApp] Saving file at /templates/DetectMode.html
+[W 22:28:32.626 NotebookApp] Blocking request with no referer
+[W 22:28:32.627 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:28:32.655 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 31.91ms referer=None
+[I 22:28:58.303 NotebookApp] Saving file at /templates/DetectMode.html
+[I 22:29:02.365 NotebookApp] Saving file at /templates/DetectMode.html
+[W 22:29:06.602 NotebookApp] Blocking request with no referer
+[W 22:29:06.603 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:29:06.612 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 12.85ms referer=None
+[W 22:29:07.949 NotebookApp] Blocking request with no referer
+[W 22:29:07.950 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:29:07.958 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 12.63ms referer=None
+[I 22:29:17.729 NotebookApp] Saving file at /templates/DetectMode.html
+[I 22:30:39.529 NotebookApp] Saving file at /templates/DetectMode.html
+[W 22:30:40.787 NotebookApp] Blocking request with no referer
+[W 22:30:40.788 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:30:40.840 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 56.06ms referer=None
+[I 22:30:49.397 NotebookApp] Saving file at /templates/DetectMode.html
+[W 22:30:51.490 NotebookApp] Blocking request with no referer
+[W 22:30:51.491 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:30:51.506 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 19.23ms referer=None
+[I 22:30:59.931 NotebookApp] Saving file at /templates/DetectMode.html
+[W 22:31:01.444 NotebookApp] Blocking request with no referer
+[W 22:31:01.446 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:31:01.467 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 25.75ms referer=None
+[W 22:31:04.612 NotebookApp] Blocking request with no referer
+[W 22:31:04.613 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:31:04.628 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 18.82ms referer=None
+[I 22:31:21.940 NotebookApp] Saving file at /templates/ProtectMode.html
+[W 22:31:24.726 NotebookApp] Blocking request with no referer
+[W 22:31:24.728 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 22:31:24.736 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 13.52ms referer=None

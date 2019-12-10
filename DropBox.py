@@ -67,7 +67,7 @@ class AsyncTask:
         #return render_template("DropBox.html")
 
     def Detector(self):
-        global Mode, ip, t3
+        global x, Mode, ip, t3
         if x != 1:
             global Time
             Time += 1
