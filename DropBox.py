@@ -63,7 +63,7 @@ class AsyncTask:
 
         print(curName)
         call("MP4Box -add static/"+str(curName)+".h264 static/"+str(curName)+".mp4", shell=True)
-        print("인코딩 완려!!!")
+        print("인코딩 완료!!!")
         #return render_template("DropBox.html")
 
     def Detector(self):
@@ -75,7 +75,7 @@ class AsyncTask:
             if Time == 5:
                 threading.Timer(1,at.Shot).start()  #사진 찍기
                 print("물체가 감지되었습니다.")
-                Send("물체가 감지되었습니다. http://"+ ip +"/detect")
+                Send("* 물체가 감지되었습니다.\n* 택배가 맞으면 Yes, 아니면 No를 눌러주세요.\nhttp://"+ ip +"/detect")
                 Time = 0
             else:
                 threading.Timer(1,at.Detector).start()
@@ -114,15 +114,18 @@ def detect():
 
 @app.route("/message/<action>")
 def action(action):
-    global x, Mode
+    global x, Mode, FirstDetect
 
     if action == "receive" :
         message = "수령처리되었습니다."
+        Send("택배 수령이 완료되었습니다.")
         Mode = 0
     else :
         if x != 1 :
-            message = "택배가 아닌것으로 처리되었습니다."
+            message = "택배가 아닌 것으로 처리되었습니다."
+            Send("택배가 아닌 것으로 처리되었습니다.")
             Mode = 0
+            FirstDetect = False
         else :
             message = "그 사이에 물체가 사라졌습니다."
         
@@ -137,7 +140,7 @@ def protect():
     if x != 1 :
         Mode = 1 # 도난방지모드
         print("도난방지모드로 전환되었습니다.")
-        Send("택배를 보호중입니다. http://"+ ip +"/protect")
+        Send("* 택배를 보호중입니다.\n* 택배를 수령하기전에 수령을 눌러주세요.\nhttp://"+ ip +"/protect")
         message = "택배를 보호중입니다."
         templateData = {
             'message' : message,
@@ -188,9 +191,9 @@ if __name__ == '__main__':
                 Time = 0
                 if Mode == 1: # 도난방지모드일때 감지X == 도난
                     Mode = 2 # 도난
-                    print("도난이 감지되었습니다..!")
-                    Send("도난이 감지되었습니다..! http://"+ ip +"/robbed")
-                    threading.Timer(1,at.Record).start()
+                    print("도난이 감지되었습니다!!!")
+                    Send("!!!도난이 감지되었습니다!!!\nhttp://"+ ip +"/robbed")
+                    threading.Timer(0,at.Record).start()
                     at.Alert()
                     Mode = 0 # 도난감지모드
                 GPIO.output(led, GPIO.LOW)

@@ -633,3 +633,53 @@ Examples
 [W 21:21:47.341 NotebookApp] 403 GET /files/templates/static/%7B%7BcurName%7D%7D.mp4 (203.252.166.152) 116.14ms referer=None
 [I 21:22:00.334 NotebookApp] Saving file at /templates/RobbedMode.html
 [I 21:23:17.193 NotebookApp] Saving file at /DropBox.py
+[W 21:26:30.366 NotebookApp] delete /static/2019-12-10 20:54:12.915407.h264
+[W 21:26:31.677 NotebookApp] delete /static/2019-12-10 21:01:22.088229.h264
+[W 21:26:31.725 NotebookApp] delete /static/2019-12-10 21:05:44.025557.h264
+[W 21:26:31.737 NotebookApp] delete /static/2019-12-10 21:09:43.069070.h264
+[W 21:26:31.748 NotebookApp] delete /static/2019-12-10 21:11:48.h264
+[W 21:26:31.760 NotebookApp] delete /static/2019-12-1021:13:39.h264
+[W 21:26:31.770 NotebookApp] delete /static/20191210%:H1848.h264
+[W 21:26:31.788 NotebookApp] delete /static/20191210-21:22:44.h264
+[W 21:26:31.832 NotebookApp] delete /static/20191210212032.h264
+[W 21:26:31.843 NotebookApp] delete /static/20191210212032.mp4
+[W 21:26:31.875 NotebookApp] delete /static/20191210212419.h264
+[W 21:26:31.890 NotebookApp] delete /static/20191210212419.mp4
+[W 21:26:31.918 NotebookApp] delete /static/ex1.jpg
+[I 21:26:40.295 NotebookApp] Saving file at /DropBox.py
+[I 21:26:58.766 NotebookApp] Saving file at /DropBox.py
+[I 21:27:28.619 NotebookApp] Saving file at /DropBox.py
+[I 21:34:44.971 NotebookApp] Saving file at /DropBox.py
+[I 21:38:15.252 NotebookApp] Saving file at /DropBox.py
+[I 21:38:26.185 NotebookApp] Saving file at /DropBox.py
+[I 21:38:33.498 NotebookApp] Saving file at /DropBox.py
+[I 21:40:40.610 NotebookApp] 302 GET / (203.252.166.152) 16.36ms
+[I 21:42:29.020 NotebookApp] Saving file at /templates/DetectMode.html
+[I 21:42:30.083 NotebookApp] Saving file at /templates/DetectMode.html
+[W 21:42:33.936 NotebookApp] Blocking request with no referer
+[W 21:42:33.937 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152): Blocking request from unknown origin
+[W 21:42:33.952 NotebookApp] 403 GET /files/templates/%7B%7B (203.252.166.152) 30.74ms referer=None
+[W 21:42:41.506 NotebookApp] 404 GET /message/no (203.252.166.152) 32.68ms referer=None
+[I 21:42:48.021 NotebookApp] Saving file at /templates/DetectMode.html
+[I 21:43:02.440 NotebookApp] Saving file at /templates/DetectMode.html
+[I 21:44:59.020 NotebookApp] Saving file at /DropBox.py
+[I 21:46:06.501 NotebookApp] Saving file at /DropBox.py
+[I 21:46:08.037 NotebookApp] Saving file at /DropBox.py
+[I 21:46:14.144 NotebookApp] Saving file at /DropBox.py
+[I 21:46:19.949 NotebookApp] Saving file at /DropBox.py
+[I 21:46:30.406 NotebookApp] Saving file at /DropBox.py
+[I 21:47:03.973 NotebookApp] Saving file at /DropBox.py
+[I 21:47:09.284 NotebookApp] Saving file at /DropBox.py
+[I 21:47:47.330 NotebookApp] Saving file at /DropBox.py
+[I 21:48:07.701 NotebookApp] Saving file at /DropBox.py
+[I 21:51:57.232 NotebookApp] Saving file at /DropBox.py
+[I 21:52:39.971 NotebookApp] Saving file at /DropBox.py
+[I 21:52:44.905 NotebookApp] Saving file at /DropBox.py
+[I 21:52:55.855 NotebookApp] Saving file at /DropBox.py
+[I 21:52:58.386 NotebookApp] Saving file at /DropBox.py
+[I 21:53:04.472 NotebookApp] Saving file at /DropBox.py
+[I 21:55:33.921 NotebookApp] Saving file at /templates/DetectMode.html
+[I 21:55:50.375 NotebookApp] Saving file at /templates/DetectMode.html
+[I 21:59:14.573 NotebookApp] Saving file at /DropBox.py
+[I 21:59:31.302 NotebookApp] Saving file at /DropBox.py
+[I 21:59:39.530 NotebookApp] Saving file at /DropBox.py
